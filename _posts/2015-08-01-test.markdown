@@ -1,8 +1,0 @@
----
-layout: post
-title: "hahaha"
-date: 2015-08-01 08:30:30
-tags: [javascript, css, ruby, java, html]
----
-你好，测试，测试！
-
