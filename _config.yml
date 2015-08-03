@@ -1,8 +1,5 @@
-# Site settings
 title: febbc
 email: 36891314@163.com
-baseurl: "/" 
+baseurl: "" 
 github_username: achillesz
-
-# Build settings
 markdown: kramdown
