@@ -1,9 +1,7 @@
 # Site settings
 title: febbc
 email: 36891314@163.com
-description: > fe,html,css javascript,ruby
-baseurl: / 
-url: http://febbc.com
+baseurl: "/" 
 github_username: achillesz
 
 # Build settings
