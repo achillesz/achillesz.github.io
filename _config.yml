@@ -1,6 +1,6 @@
 title: febbc
 email: 36891314@163.com
-baseurl: "http://febbc.com/" 
+url: "http://febbc.com/" 
 github_username: achillesz
 markdown: kramdown
 paginate: 5
