@@ -3,3 +3,5 @@ email: 36891314@163.com
 baseurl: "" 
 github_username: achillesz
 markdown: kramdown
+paginate: 5
+paginate_path: "page:num"
