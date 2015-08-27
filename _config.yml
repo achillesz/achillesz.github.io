@@ -1,7 +1,8 @@
 title: febbc
 email: 36891314@163.com
 github_username: achillesz
-markdown: kramdown
-baseurl: http://www.febbc.com
+pygments: true
+mardown: redcarpet
 paginate: 5
+permalink: /:categories/:year-:month/:title.html
 paginate_path: "page:num"
