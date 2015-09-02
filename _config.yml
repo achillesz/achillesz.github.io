@@ -4,6 +4,5 @@ github_username: achillesz
 pygments: true
 mardown: redcarpet
 paginate: 5
-baseurl: /
 permalink: /:categories/:year-:month/:title.html
 paginate_path: "page:num"
