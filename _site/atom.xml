@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>febbc</title>
+  <link href="//achillesz.github.io//atom.xml" rel="self"/>
+  <link href="//achillesz.github.io"/>
+  <updated>2015-09-04T23:19:08+08:00</updated>
+  <id>//achillesz.github.io</id>
+  <author>
+    <name>achilles</name>
+  </author>
+
+  
+  <entry>
+    <title>jquery-event</title>
+    <link href="//achillesz.github.io/javascript/jquery/2015-08/jquery-event.html"/>
+    <updated>2015-08-27T22:57:36+08:00</updated>
+    <id>//achillesz.github.io/javascript/jquery/2015-08/jquery-event</id>
+    <content type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+
+To a...</content>
+  </entry>
+  
+  <entry>
+    <title>javascript优先级</title>
+    <link href="//achillesz.github.io/javascript/2015-08/grade.html"/>
+    <updated>2015-08-19T18:21:36+08:00</updated>
+    <id>//achillesz.github.io/javascript/2015-08/grade</id>
+    <content type="html">运算符   描述
+.  字段访问、数组下标、函数调用以及表达式分组
+++ -- - ~ ! delete new typeof void  一元运算符、返回数据类型、对象创建、未定义值
+* / %   乘法、除法、取模
++ - +   加法、减法、字符串连接
+&amp;lt;&amp;lt; &amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt;   移位
+&amp;lt; &amp;lt;= &amp;gt; &amp;gt;= instanceof    小于、小于等于、大于、大于等于、instanceof
+== != === !==   等于、不等于、严格相等、非严格相等
+&amp;amp;   按位与
+^   按位异或
+|   按位或
+&amp;amp;...</content>
+  </entry>
+  
+  <entry>
+    <title>产品中心BUG处理</title>
+    <link href="//achillesz.github.io/work/2015-08/bugs.html"/>
+    <updated>2015-08-14T22:56:36+08:00</updated>
+    <id>//achillesz.github.io/work/2015-08/bugs</id>
+    <content type="html">
+    需要读取且回传给后端的数据，悲剧的单引号
+    
+        
+
+
+    
+
+
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>票种模块业务</title>
+    <link href="//achillesz.github.io/work/2015-08/price-chanel.html"/>
+    <updated>2015-08-13T22:56:36+08:00</updated>
+    <id>//achillesz.github.io/work/2015-08/price-chanel</id>
+    <content type="html">属性解释
+
+
+    canusedate
+    分类下设置使用日期快
+    
+    
+        
+             {title: &quot;&quot;, productId: &quot;2499086813&quot;, beginDate: &quot;2015-08-14&quot;, endDate: &quot;2015-08-30&quot;, weekDays[]: Array[7]…}
+        
+    
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>演出票前后端交互数据</title>
+    <link href="//achillesz.github.io/work/2015-08/%E6%BC%94%E5%87%BA%E7%A5%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%95%B0%E6%8D%AE.html"/>
+    <updated>2015-08-12T21:24:36+08:00</updated>
+    <id>//achillesz.github.io/work/2015-08/演出票前后端交互数据</id>
+    <content type="html">spuInfo字段下的数据，里面包含规格信息specInfo
+
+
+
+{
+        &amp;quot;propInfo&amp;quot;: [
+            {
+                &amp;quot;code&amp;quot;: &amp;quot;showPic&amp;quot;,
+                &amp;quot;name&amp;quot;: &amp;quot;演出海报&amp;quot;,
+                &amp;quot;value&amp;quot;: &amp;quot;http://static.228.cn/upload/2015/07/10/AfterTreatment/1436511989629...</content>
+  </entry>
+  
+  <entry>
+    <title>欢迎来到febbc</title>
+    <link href="//achillesz.github.io/jekyll/update/2015-08/welcome-to-jekyll.html"/>
+    <updated>2015-08-04T06:14:36+08:00</updated>
+    <id>//achillesz.github.io/jekyll/update/2015-08/welcome-to-jekyll</id>
+    <content type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
+
+To a...</content>
+  </entry>
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="//achillesz.github.io/demo/2014-08/test-post.html"/>
+    <updated>2014-08-16T00:00:00+08:00</updated>
+    <id>//achillesz.github.io/demo/2014-08/test-post</id>
+    <content type="html">这是一个 代码块
+
+这是一个 粗体
+
+这是一个 斜体
+这是一个代码段
+
+
+这是一个引用
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Hello Jekyll!</title>
+    <link href="//achillesz.github.io/demo/2014-08/hello-jekyll.html"/>
+    <updated>2014-08-13T00:00:00+08:00</updated>
+    <id>//achillesz.github.io/demo/2014-08/hello-jekyll</id>
+    <content type="html">测试 h1
+
+测试 h2
+
+测试 h3
+
+测试 h4
+
+测试 h5
+
+测试 h6
+
+测试粗体
+
+测试斜体
+
+
+测试引用
+
+
+
+
+测试行代码 _post
+
+测试段落代码
+/* hello world demo */
+#include &amp;lt;stdio.h&amp;gt;
+int main(int argc, char **argv)
+{
+        printf(&amp;quot;Hello, World!\n&amp;quot;);
+        return 0;
+}
+
+下面是表格
+
+
+
+head1
+head2
+head3
+head4
+
+
+
+row1text1
+row1text2
+row1text3...</content>
+  </entry>
+  
+  <entry>
+    <title>Welcome to Jekyll!</title>
+    <link href="//achillesz.github.io/demo/2014-08/welcome-to-jekyll.html"/>
+    <updated>2014-08-12T00:00:00+08:00</updated>
+    <id>//achillesz.github.io/demo/2014-08/welcome-to-jekyll</id>
+    <content type="html">测试 h1
+
+测试 h2
+
+测试 h3
+
+测试 h4
+
+测试 h5
+
+测试 h6
+
+测试粗体
+
+测试斜体
+
+
+测试引用
+
+
+
+
+测试行代码 _post
+
+测试段落代码
+/* hello world demo */
+#include &amp;lt;stdio.h&amp;gt;
+int main(int argc, char **argv)
+{
+        printf(&amp;quot;Hello, World!\n&amp;quot;);
+        return 0;
+}
+
+下面是表格
+
+
+
+head1
+head2
+head3
+head4
+
+
+
+row1text1
+row1text2
+row1text3...</content>
+  </entry>
+  
+
+</feed>
