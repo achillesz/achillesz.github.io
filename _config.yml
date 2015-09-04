@@ -1,8 +1,0 @@
-title: febbc
-email: 36891314@163.com
-github_username: achillesz
-highlighter: pygments
-mardown: redcarpet
-paginate: 5
-permalink: /:categories/:year-:month/:title.html
-paginate_path: "page:num"
