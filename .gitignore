@@ -1,0 +1,13 @@
+_site
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.sass-cache
+
+qrsync
+_qiniu.json
+.idea
+*.swp
