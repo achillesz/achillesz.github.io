@@ -1,9 +1,9 @@
 --- 
 layout: post
-title: "jquery-event"
+title: "jQuery-Event"
 date:   2015-08-27 14:57:36
 categories: [javascript,jquery]
-tags: [jqeury,event]
+tags: [jQuery,Event]
 ---
 
 #标题1
