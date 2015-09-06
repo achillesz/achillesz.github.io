@@ -10,7 +10,7 @@ type是个静态方法，主要用来实现类型判断
 
 	type of obj
 	
-|obj|result|
+|obj|result1|
 |:---:|:---:|
 |undefined|undefined|
 |null|object|
