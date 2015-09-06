@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello Jekyll!"
 category: demo
-tags: [test, jekyll, hello]
+tags: [test]
 ---
 
 # 测试 h1
@@ -17,17 +17,20 @@ tags: [test, jekyll, hello]
 
 ###### 测试 h6
 
-**测试粗体**
-
-*测试斜体*
-
->测试引用
 
 - - -
 
-测试行代码 `_post`
+这是一个 `代码块`
 
-测试段落代码
+这是一个 **粗体**
+
+这是一个 *斜体*
+
+    TAB缩进是代码块
+
+> \< 是引用
+
+都加空行是段落
 
 ```ruby
 /* hello world demo */
