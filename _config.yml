@@ -28,8 +28,9 @@ sass:
 
 # comment
 comments:
+    provider: duoshuo
     duoshuo:
-        name:                               # short name
+       short_name: febbc
         rcomments:
             num: 10
             avatar: 0
