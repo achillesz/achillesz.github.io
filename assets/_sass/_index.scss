@@ -1,15 +1,9 @@
 
-#ds-recent-comments li.ds-comment {border-top: none !important; border-bottom: none !important; list-style-type: disc !important;}
-
-#ds-recent-comments li.ds-comment div {display: none !important;}
-
-#ds-recent-comments li.ds-comment {padding: 0px 0px !important; line-height: 1.8 !important; font-size: 16px !important;}
-
-#ds-recent-visitors {padding: 0 25px; !important;}
-
-#ds-recent-visitors .ds-avatar {margin: 2px 0 !important;}
-
-.ds-avatar a img, .ds-avatar img {margin: 2px !important; border: 1px solid rgb(50, 118, 177); border-radius: 4px; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);}
-
-#ds-thread #ds-reset .ds-powered-by {display:none !important;}
+#ds-recent-comments li.ds-comment { border-top: none !important; border-bottom: none !important; list-style-type: disc !important; }
+#ds-recent-comments li.ds-comment div { display: none !important; }
+#ds-recent-comments li.ds-comment { padding: 0px 0px !important; line-height: 1.8 !important; font-size: 16px !important; }
+#ds-recent-visitors { padding: 0 25px; !important; }
+#ds-recent-visitors .ds-avatar { margin: 2px 0 !important; }
+.ds-avatar a img, .ds-avatar img { margin: 2px !important; border: 1px solid rgb(50, 118, 177); border-radius: 4px; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
+#ds-thread #ds-reset .ds-powered-by { display: none !important; }
 
