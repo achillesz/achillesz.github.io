@@ -9,5 +9,5 @@ Thumbs.db
 
 qrsync
 _qiniu.json
-.idea/*
+/.idea/*
 *.swp
