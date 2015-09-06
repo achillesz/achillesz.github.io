@@ -1,4 +1,4 @@
-_site
+_site/*
 
 Thumbs.db
 .DS_Store
@@ -9,5 +9,5 @@ Thumbs.db
 
 qrsync
 _qiniu.json
-.idea
+.idea/*
 *.swp

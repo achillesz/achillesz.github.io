@@ -30,7 +30,7 @@ sass:
 comments:
     provider: duoshuo
     duoshuo:
-       short_name: febbc
+        name: febbc
         rcomments:
             num: 10
             avatar: 0
