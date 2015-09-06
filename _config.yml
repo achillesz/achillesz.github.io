@@ -34,9 +34,9 @@ comments:
         rcomments:
             num: 10
             avatar: 0
-            time: 0
+            time: 1
             title: 0
-            admin: 0
+            admin: 1
             length: 26
 # 网站统计
 analytics:
