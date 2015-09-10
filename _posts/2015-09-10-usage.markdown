@@ -2,8 +2,7 @@
 layout: post
 title:  "Component关系功能说明"
 date:   2015-09-010 21:51:36
-category: work
-tags: [work]
+tags: work
 ---
 
 # 继承关系说明
