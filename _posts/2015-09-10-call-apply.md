@@ -9,13 +9,14 @@ js内部API
 
 #### apply
 
+```js
 /**
 @param {Object} [thisArg]
 @param {Array} [argArray]
 @return {*}
 */
 Function.prototype.apply = function(thisArg,argArray) {};
-
+```
 #### call
 
 ```js
