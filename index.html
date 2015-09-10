@@ -40,9 +40,9 @@ layout: default
   {% for post in paginator.posts %}
   <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
   {% if post.content contains "<!-- more -->" %}
-	<div>  {{ post.content | split:'<!-- more -->' | first }} </div>
+	<div class="aaa">  {{ post.content | split:'<!-- more -->' | first }} </div>
   {% else %}
-  <div> {{ post.content | strip_html | truncate:50 }} </div>
+  <div  class="bbb"> {{ post.content | strip_html | truncate:50 }} </div>
   {% endif %}
   {% endfor %}
 

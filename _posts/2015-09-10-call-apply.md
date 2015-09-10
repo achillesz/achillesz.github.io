@@ -32,18 +32,22 @@ Function = {};
 ###### `call` example
 
 ```js
-function a(x) { console.log(x); return this;}; a.call(window, [1,2])
+function a(x) { console.log(x); console.log(arguments); return this;}; a.call(window, [1,2])
 [1, 2]
-Window {top: Window, location: Location, document: document, window: Window, external: Object…}
+[Array[2]]
 ```
 
 
 ###### `apply` example
 
 ```js
-function a(x) { console.log(arguments); return this;}; a.apply(window, [1,2,3],2)
-[1, 2, 3]
+function a(x) { console.log(x); console.log(arguments); return this;}; a.apply(window, [1,2],3)
+
+1
+[1, 2]
 ```
+
+
 
 
 
