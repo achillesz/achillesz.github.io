@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Component关系功能说明"
+category: work
+tags: [work]
+---
+
+# 继承关系说明
+
+
+
+	$.ui.Component --> $.event.EventTarget --> $.Disposable
+	
+	$.ui.Dialog --> $.ui.Component
+	
+		$.ui.Prompt --> $.ui.Dialog
+		$.ui.PromptDialog --> $.ui.Dialog
+		
+	$.ui.AjaxForm > $.ui.Component
+	$.ui.NumberInput > $.ui.Component
+	$.ui.Score > $.ui.Component
+	$.ui.Placeholder > $.ui.Component
+	$.ui.Card > $.ui.Component
+	$.ui.EditableSelect > $.ui.Component
+		$.ui.DaySelect
+		$.ui.TimeSelect.MinuteSelect 
+		$.ui.TimeSelect.HourSelect
+		
+	$.ui.DateTimeSelect > $.ui.Component
+	$.ui.TimeSelect > $.ui.Component
+	$.ui.Calendar > $.ui.Component
+	$.ui.DatePicker > $.ui.Component
+	
+	
+	jqueryextend 
+	$.timer.TimeTrigger
+	$.ui.Tips
+	$.ui.TabPane
+	$.ui.CharCounter
+	$.date
+	window.tts = {};
+	tts.PageInit
+	tts.cpanel.Permission
+	tts.cpanel.Session
+	tts.cpanel.TopMessage
+	
