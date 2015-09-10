@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Component关系功能说明"
-date:   2015-09-010 21:51:36
+date:   2015-09-10 21:51:36
 tags: work
 ---
 
