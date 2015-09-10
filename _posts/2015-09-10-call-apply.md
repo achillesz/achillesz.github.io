@@ -5,7 +5,7 @@ category: javascript
 tags: [javascript-core]
 ---
 
-js内部API
+##内部实现
 
 #### apply
 
@@ -28,10 +28,21 @@ Function.prototype.apply = function(thisArg,argArray) {};
 Function.prototype.call = function(thisArg,args) {};
 Function = {};
 ```
+
+call example
+
 ```js
 function a(x) { console.log(x); return this;}; a.call(window, [1,2])
-VM569:2 [1, 2]
+[1, 2]
 Window {top: Window, location: Location, document: document, window: Window, external: Object…}
+```
+
+
+apply example
+
+```js
+function a(x) { console.log(arguments); return this;}; a.apply(window, [1,2,3],2)
+2 [1, 2, 3]
 ```
 
 
