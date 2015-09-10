@@ -42,7 +42,7 @@ Window {top: Window, location: Location, document: document, window: Window, ext
 
 ```js
 function a(x) { console.log(arguments); return this;}; a.apply(window, [1,2,3],2)
-2 [1, 2, 3]
+[1, 2, 3]
 ```
 
 
