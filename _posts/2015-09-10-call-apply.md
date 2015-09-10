@@ -29,7 +29,7 @@ Function.prototype.call = function(thisArg,args) {};
 Function = {};
 ```
 
-call example
+###### `call` example
 
 ```js
 function a(x) { console.log(x); return this;}; a.call(window, [1,2])
@@ -38,7 +38,7 @@ Window {top: Window, location: Location, document: document, window: Window, ext
 ```
 
 
-apply example
+###### `apply` example
 
 ```js
 function a(x) { console.log(arguments); return this;}; a.apply(window, [1,2,3],2)
