@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "js继承解释"
+date:   2015-09-11 15:51:36
+tags: javascript
+---
+
+1. Son 类实例化一个对象，new 应该需要做几件事，创造一个空对象，执行类函数，类函数的this指向空对象，无返回值，默认返回该对象。
+
+2. 生成的实例对象有个constructor，指向类（构造它的）。
+
+3. 生成的实例对象应该有个_proto_指向类的原型对象的_proto_ 
+
+4. 每一个函数都应该有一个原型对象，属性constructor,应该指向类自身。类创建的对象的constructor应该与这里的constructor保持一致。
+ 
+{% highlight js %}
+	function Son() {}; 
+	var son1 = new Son(); 
+		
+	// Son {}  只能证明返回一个空对象
+	
+	function Son() {
+		this.a = 1
+	}; 
+	
+	var son1 = new Son();
+	
+	// Son {a: 1}  证明函数执行 this指向
+{% endhighlight %}
+
+
+如何印证上面所说的？
+
+
+		
+<!-- more -->
+		
+
+	
