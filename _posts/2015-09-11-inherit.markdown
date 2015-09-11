@@ -5,6 +5,7 @@ date:   2015-09-11 15:51:36
 tags: javascript
 ---
 
+
 1. Son 类实例化一个对象，new 应该需要做几件事，创造一个空对象，执行类函数，类函数的this指向空对象，无返回值，默认返回该对象。
 
 2. 生成的实例对象有个constructor，指向类（构造它的）。
@@ -61,6 +62,37 @@ Son {a: 1}  证明函数执行 this指向
 ```js
 	son1.constructor == Son && Son == Son.prototype.constructor
 	true
+```
+
+下面讨论继承
+
+* 一种是类抄写
+* 一种是原型继承
+
+	类式继承的优点是，查找速度快。缺点是，浪费空间
+	原型式继承的优点是，查找是嵌套结构，但是只保存一份引用
+	
+```js
+
+	function Son() { 
+		this.constructor = arguments.callee;
+		this.b = 2;
+	};
+	
+	function Parent() { 
+		this.a = 1
+	}; 
+	 
+	Parent.prototype.sayName= function() { 
+		console.log('febbc');
+	}; 
+	    
+	Son.prototype = new Parent(); 
+	Son.prototype.sayName = function() {
+		console.log(1);
+	}; 
+	
+	son1 = new Son();
 ```
 
 
