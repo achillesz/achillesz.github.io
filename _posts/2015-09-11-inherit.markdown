@@ -12,6 +12,8 @@ tags: javascript
 3. 生成的实例对象应该有个_proto_指向类的原型对象的_proto_ 
 
 4. 每一个函数都应该有一个原型对象，属性constructor,应该指向类自身。类创建的对象的constructor应该与这里的constructor保持一致。
+
+ <!-- more -->
  
 {% highlight js %}
 
@@ -43,7 +45,7 @@ Son {a: 1}  证明函数执行 this指向
 
 
 		
-<!-- more -->
+
 		
 
 	
