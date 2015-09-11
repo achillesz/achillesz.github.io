@@ -13,7 +13,7 @@ tags: javascript
 
 4. 每一个函数都应该有一个原型对象，属性constructor,应该指向类自身。类创建的对象的constructor应该与这里的constructor保持一致。
 
- <!-- more -->
+<!-- more -->
  
 如何印证上面所说的？
 
