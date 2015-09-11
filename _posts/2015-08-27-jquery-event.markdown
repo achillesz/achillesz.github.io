@@ -17,6 +17,7 @@ tags: [jQuery,Event]
 > 我是引用2
 
 内引用 `的的`
+<!-- more -->
 
 {% highlight js %}
 	function helloWorld() {

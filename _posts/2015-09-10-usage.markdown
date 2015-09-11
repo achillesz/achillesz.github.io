@@ -28,7 +28,7 @@ tags: work
 	$.ui.TimeSelect > $.ui.Component
 	$.ui.Calendar > $.ui.Component
 	$.ui.DatePicker > $.ui.Component
-	
+	<!-- more -->
 	
 	jqueryextend 
 	$.timer.TimeTrigger
