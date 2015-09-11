@@ -4,7 +4,7 @@ title:  "Function.call Function.apply"
 category: javascript
 tags: [javascript-core]
 ---
-
+<!-- more -->
 ##内部实现
 
 #### apply
