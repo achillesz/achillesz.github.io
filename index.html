@@ -42,7 +42,7 @@ layout: default
   {% if post.content contains "<!-- more -->" %}
 	<div class="aaa">  {{ post.content | split:'<!-- more -->' | first }} </div>
   {% else %}
-  <div  class="bbb"> {{ post.content  | truncate:200 }} </div>
+  <div  class="bbb"> {{ post.content | strip_html | truncate:200 }} </div>
   {% endif %}
   {% endfor %}
 
