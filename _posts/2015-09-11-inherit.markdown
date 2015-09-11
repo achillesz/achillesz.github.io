@@ -17,7 +17,7 @@ tags: javascript
  
 如何印证上面所说的？
 
-> 第一条说明
+	第一条说明
  
 {% highlight js %}
 
@@ -41,6 +41,15 @@ Son {}  只能证明返回一个空对象
 {% endhighlight %}
 
 Son {a: 1}  证明函数执行 this指向
+
+	第二条说明
+
+```js
+	son1.constructor
+	function Son() {this.a = 1};
+```
+
+
 
 
 
