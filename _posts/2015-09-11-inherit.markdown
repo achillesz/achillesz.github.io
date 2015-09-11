@@ -118,17 +118,27 @@ Son {a: 1}  证明函数执行 this指向
 		
 	function Son() { 
 		Parent.call(this);
-		this.constructor = arguments.callee;
+		//this.constructor = arguments.callee;
 		this.b = 2;
 	};
 	
 	$.inherits(Son, Parent);
 
 	Son.prototype.sayName = function() {
+		Son.superClass_.sayName.call(this);
 		console.log(1);
 	}; 
 	
+	var son1 = new Son();
+	
+	son1.sayName();
+	
 ```
+
+为何要有个空函数？
+为何要用call?
+为何子类要保存父类的原型？
+为何要重置constructor?
 
 
 
