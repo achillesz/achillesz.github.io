@@ -49,6 +49,20 @@ Son {a: 1}  证明函数执行 this指向
 	function Son() {this.a = 1};
 ```
 
+	第三条说明
+
+```js
+	son1._proto_ === Son.prototype._proto_
+	true
+```
+
+	第四条说明
+
+```js
+	son1.constructor == Son && Son == Son.prototype.constructor
+	true
+```
+
 
 
 
