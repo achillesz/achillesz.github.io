@@ -15,6 +15,10 @@ tags: javascript
 
  <!-- more -->
  
+如何印证上面所说的？
+
+> 第一条说明
+ 
 {% highlight js %}
 
 	function Son() {
@@ -41,7 +45,7 @@ Son {a: 1}  证明函数执行 this指向
 
 
 
-如何印证上面所说的？
+
 
 
 		
