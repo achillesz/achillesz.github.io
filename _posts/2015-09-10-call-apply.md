@@ -5,7 +5,7 @@ category: javascript
 tags: [javascript-core]
 ---
 ##内部实现
- <!-- more -->
+
 #### apply
 
 ```js

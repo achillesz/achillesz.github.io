@@ -6,9 +6,6 @@ tags: work
 ---
 
 # 继承关系说明
-
-
- <!-- more -->
  
 	$.ui.Component --> $.event.EventTarget --> $.Disposable
 	
