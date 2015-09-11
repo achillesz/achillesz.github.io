@@ -69,7 +69,8 @@ Son {a: 1}  证明函数执行 this指向
 * 一种是类抄写
 * 一种是原型继承
 
-	类式继承的优点是，查找速度快。缺点是，浪费空间
+	类抄写的优点是，查找速度快。缺点是，浪费空间
+	
 	原型式继承的优点是，查找是嵌套结构，但是只保存一份引用
 	
 ```js
@@ -93,6 +94,40 @@ Son {a: 1}  证明函数执行 this指向
 	}; 
 	
 	son1 = new Son();
+```
+
+最佳继承方式：
+
+```js
+
+	$.inherits = function(childCtor, parentCtor) {
+		function tempCtor() {};
+		tempCtor.prototype = parentCtor.prototype;
+		childCtor.superClass_ = parentCtor.prototype;
+		childCtor.prototype = new tempCtor();
+		childCtor.prototype.constructor = childCtor;
+	};
+	
+	function Parent() { 
+		this.a = 1
+	};
+	
+	Parent.prototype.sayName= function() { 
+		console.log('febbc');
+	}; 
+		
+	function Son() { 
+		Parent.call(this);
+		this.constructor = arguments.callee;
+		this.b = 2;
+	};
+	
+	$.inherits(Son, Parent);
+
+	Son.prototype.sayName = function() {
+		console.log(1);
+	}; 
+	
 ```
 
 
