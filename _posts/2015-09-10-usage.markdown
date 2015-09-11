@@ -14,6 +14,8 @@ tags: work
 		$.ui.Prompt --> $.ui.Dialog
 		$.ui.PromptDialog --> $.ui.Dialog
 		
+<!-- more -->
+		
 	$.ui.AjaxForm > $.ui.Component
 	$.ui.NumberInput > $.ui.Component
 	$.ui.Score > $.ui.Component
@@ -28,7 +30,7 @@ tags: work
 	$.ui.TimeSelect > $.ui.Component
 	$.ui.Calendar > $.ui.Component
 	$.ui.DatePicker > $.ui.Component
-	<!-- more -->
+	
 	
 	jqueryextend 
 	$.timer.TimeTrigger

@@ -9,13 +9,13 @@ tags: [jQuery,Core]
 type    你好	
 
 	type of obj
-<!-- more -->	
+	
+<!-- more -->
+	
 |obj|result1|
 |:---:|:---:|
 |undefined|undefined|
 |null|object|
-   
-<!-- more -->
 
 {% highlight js %}
         type: function(obj) {
