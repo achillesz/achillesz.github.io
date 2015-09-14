@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7049964-61fc-4b5f-bb3a-1cd4fc1beb4c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-09-11-inherit.markdown" afterPath="$PROJECT_DIR$/_posts/2015-09-11-inherit.markdown" />
-    </list>
+    <list default="true" id="a7049964-61fc-4b5f-bb3a-1cd4fc1beb4c" name="Default" comment="" />
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,14 +70,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-08-12-show-data.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2015-08-12-show-data.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2015-08-12-show-data.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8">
-              <caret line="349" column="22" selection-start-line="349" selection-start-column="22" selection-end-line="349" selection-end-column="22" />
+            <state vertical-scroll-proportion="-1.2471131">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -111,27 +109,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-09-11-inherit.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015-09-11-inherit.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-09-11-inherit.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6674365">
-              <caret line="140" column="2" selection-start-line="140" selection-start-column="2" selection-end-line="140" selection-end-column="2" />
+            <state vertical-scroll-proportion="-12.866667">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-09-06-type.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2015-09-06-type.markdown">
+      <file leaf-file-name="2015-09-10-usage.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-09-10-usage.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.8">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,7 +179,6 @@
         <option value="$PROJECT_DIR$/assets/css/index.scss" />
         <option value="$PROJECT_DIR$/assets/_sass/_index.scss" />
         <option value="$PROJECT_DIR$/_posts/2015-08-12-演出票前后端交互数据.md" />
-        <option value="$PROJECT_DIR$/_posts/2015-08-12-show-data.md" />
         <option value="$PROJECT_DIR$/_posts/2014-08-16-test-post.md" />
         <option value="$PROJECT_DIR$/_posts/2014-08-13-hello-jekyll.md" />
         <option value="$PROJECT_DIR$/_posts/2015-09-06-type.md.markdown" />
@@ -197,6 +194,7 @@
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/archive.html" />
         <option value="$PROJECT_DIR$/_posts/2015-09-11-inherit.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-12-show-data.md" />
       </list>
     </option>
   </component>
@@ -822,17 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-09-10-usage.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.266666">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-09-06-type.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -888,17 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-12-show-data.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8">
-          <caret line="349" column="22" selection-start-line="349" selection-start-column="22" selection-end-line="349" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2014-08-13-hello-jekyll.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -934,8 +910,30 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6674365">
-          <caret line="140" column="2" selection-start-line="140" selection-start-column="2" selection-end-line="140" selection-end-column="2" />
+        <state vertical-scroll-proportion="-12.866667">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-09-10-usage.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-12-show-data.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2471131">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="17" />
           <folding />
         </state>
       </provider>
