@@ -1,0 +1,138 @@
+---
+layout: post
+title: "jQuery blur事件绑定不上"
+date:   2015-08-03 22:14:36
+categories: [jQuery]
+tags: [jQuery,Event]
+---
+
+在一个ifram里面弹出到父级窗口的dialog窗口中,做手机，邮箱的校验。但是发现无效。
+
+```js
+
+	var jv = this.form.jvalidator();
+	jv.when(['blur']);
+	jv.success(function() {
+		var $el = this.$element;
+		$el.removeClass('red_border');
+	});
+
+	jv.fail(function() {
+		var $el = this.$element;
+		$el.addClass('red_border');
+	});
+	
+```
+
+经过一顿排查发现某个地方的代码，如下：
+
+```js
+
+	// Create "bubbling" focus and blur events (jQ 1.7.2)
+	if ( !jQuery.support.focusinBubbles ) {
+		jQuery.each({ focus: "focusin", blur: "focusout" }, function( orig, fix ) {
+	
+			// Attach a single capturing handler while someone wants focusin/focusout
+			var attaches = 0,
+				handler = function( event ) {
+					jQuery.event.simulate( fix, event.target, jQuery.event.fix( event ), true );
+				};
+	
+			jQuery.event.special[ fix ] = {
+				setup: function() {
+					if ( attaches++ === 0 ) {
+						document.addEventListener( orig, handler, true );
+					}
+				},
+				teardown: function() {
+					if ( --attaches === 0 ) {
+						document.removeEventListener( orig, handler, true );
+					}
+				}
+			};
+		});
+	}
+	
+```
+
+setup的执行绑定到了document上了,下面是调用的地方
+
+```js
+
+	type = ( selector ? special.delegateType : special.bindType ) || type;
+
+			// Update special based on newly reset type
+			special = jQuery.event.special[ type ] || {};
+
+			// handleObj is passed to all event handlers
+			handleObj = jQuery.extend({
+				type: type,
+				origType: tns[1],
+				data: data,
+				handler: handler,
+				guid: handler.guid,
+				selector: selector,
+				quick: selector && quickParse( selector ),
+				namespace: namespaces.join(".")
+			}, handleObjIn );
+
+			// Init the event handler queue if we're the first
+			handlers = events[ type ];
+			if ( !handlers ) {
+				handlers = events[ type ] = [];
+				handlers.delegateCount = 0;
+
+				// Only use addEventListener/attachEvent if the special events handler returns false
+				if ( !special.setup || special.setup.call( elem, data, namespaces, eventHandle ) === false ) {
+					// Bind the global event handler to the element
+					if ( elem.addEventListener ) {
+						elem.addEventListener( type, eventHandle, false );
+
+					} else if ( elem.attachEvent ) {
+						elem.attachEvent( "on" + type, eventHandle );
+					}
+				}
+			}
+			
+```
+
+类型的修正代码，从blur 到 focuout,被上面的代码所调用
+
+```js
+
+	special: {
+		ready: {
+			// Make sure the ready event is setup
+			setup: jQuery.bindReady
+		},
+
+		load: {
+			// Prevent triggered image.load events from bubbling to window.load
+			noBubble: true
+		},
+
+		focus: {
+			delegateType: "focusin"
+		},
+		blur: {
+			delegateType: "focusout"
+		},
+
+		beforeunload: {
+			setup: function( data, namespaces, eventHandle ) {
+				// We only want to do this special case on windows
+				if ( jQuery.isWindow( this ) ) {
+					this.onbeforeunload = eventHandle;
+				}
+			},
+
+			teardown: function( namespaces, eventHandle ) {
+				if ( this.onbeforeunload === eventHandle ) {
+					this.onbeforeunload = null;
+				}
+			}
+		}
+	}
+	
+	
+```
