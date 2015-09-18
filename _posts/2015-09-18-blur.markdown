@@ -26,6 +26,8 @@ tags: [jQuery,Event]
 
 经过一顿排查发现某个地方的代码，如下：
 
+<!-- more -->
+
 ```js
 
 	// Create "bubbling" focus and blur events (jQ 1.7.2)
