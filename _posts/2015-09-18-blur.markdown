@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "jQuery blur事件绑定不上"
-date:   2015-08-03 22:14:36
+date:   2015-09-18 11:38:36
 categories: [jQuery]
 tags: [jQuery,Event]
 ---
