@@ -27,3 +27,9 @@ tags: [proxy,Core]
 ```
 
 如果不传参数，只会释放 `$` ，而要更彻底一点把 `jQuery` 也释放掉。
+
+```js
+
+var bbb = {a: function() {console.log(arguments)}}; var temp = $.proxy(bbb, 'a', '2'); temp('1')
+
+```
