@@ -1,0 +1,48 @@
+---
+layout: post
+title: "proxy的使用"
+date:   2015-09-23 17:54:36
+categories: [jQuery]
+tags: [proxy,Core]
+---
+
+假设有一个函数要被调用，this应该指向正确的context(上下文)，但在某些环境下this另有它指，破坏了我们期望的this。这种场景有几种：
+
+* 事件函数中，被指向dom元素
+* each函数中，被指向为dom元素
+* 定时器函数中，被指向window
+
+以上几个场景会破坏掉面向对象的this,我们的目标是这个函数被执行时this指向正确的上下文。
+而实际上，是包装了一层函数，这层函数的上下文不被关心，而我们真正的函数被触发时候，会指向正确的上下文。
+
+```js
+
+ 		proxy: function(fn, context) {
+            var tmp, args, proxy;
+            if (typeof context === "string") {
+                tmp = fn[context];
+                context = fn;
+                fn = tmp;
+            }
+
+            if (!jQuery.isFunction(fn)) {
+                return undefined;
+            }
+
+            args = core_slice.call(arguments, 2);
+            proxy = function() {
+                return fn.apply(context || this, args.concat(core_slice.call(arguments)));
+            };
+
+            proxy.guid = fn.guid = fn.guid || jQuery.guid++;
+
+            return proxy;
+        }
+
+```
+
+支持第一个参数是个对象，第二个参数是第一个参数需要代理的方法名 是字符窜
+
+另一种常见的方法就是，直接带入函数，以及期望的上下文
+
+
