@@ -3,7 +3,7 @@ layout: post
 title: "noConflict函数干的事"
 date:   2015-09-23 15:37:36
 categories: [jQuery]
-tags: [jQuery,Core]
+tags: [jQuery,Core]$
 ---
 
 在拉入我们的库运行的时候，我们会暴露两个变量来使用我们的库，但也许我们之前，别人已经叫过这个名字了。那怎么办？
@@ -26,3 +26,5 @@ tags: [jQuery,Core]
 
 
 ```
+
+如果不传参数，只会释放`$`，而要更彻底一点把`jQuery`也释放掉。
