@@ -88,27 +88,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-09-23-proxy.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2015-09-23-proxy.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2015-09-23-proxy.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-36.0">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.9433962">
+              <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-09-23-noconflict1.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015-09-23-noconflict1.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-09-23-noconflict1.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8207547">
-              <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
+            <state vertical-scroll-proportion="-23.2">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -202,8 +202,8 @@
         <option value="$PROJECT_DIR$/_posts/2015-08-12-show-data.md" />
         <option value="$PROJECT_DIR$/_posts/2015-09-18-blur.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-09-23-noconflict.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2015-09-23-proxy.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-09-23-noconflict1.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-09-23-proxy.markdown" />
       </list>
     </option>
   </component>
@@ -951,24 +951,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-09-23-proxy.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.0">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-09-23-noconflict1.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8207547">
-          <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
+        <state vertical-scroll-proportion="-23.2">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-09-23-proxy.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9433962">
+          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
           <folding />
         </state>
       </provider>

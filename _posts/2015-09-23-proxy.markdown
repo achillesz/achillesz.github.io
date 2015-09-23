@@ -46,3 +46,8 @@ tags: [proxy,Core]
 另一种常见的方法就是，直接带入函数，以及期望的上下文
 
 
+```js
+
+var bbb = {a: function() {console.log(arguments)}}; var temp = $.proxy(bbb, 'a', '2'); temp('1')
+
+```
