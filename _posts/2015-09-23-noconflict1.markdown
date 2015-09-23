@@ -24,7 +24,6 @@ tags: [jQuery,Core]
 		return jQuery;
 	}
 
-
 ```
 
 如果不传参数，只会释放 `$` ，而要更彻底一点把 `jQuery` 也释放掉。
