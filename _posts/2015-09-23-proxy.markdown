@@ -57,7 +57,7 @@ var bbb = {a: function() {console.log(arguments)}}; var temp = $.proxy(bbb.a, bb
 
 ```
 
-顺便说一下，参数是把proxy第2个（从0开始算起）参数后面的，concat上，返回函数调用时传递的参数，这样多次涉及到把参数转换成数组，然后拼接到一起。
+顺便说一下，参数是把 `proxy` 函数的第2个（从0开始算起）参数后面的参数，concat上，返回函数调用时传递的参数。这样涉及多次把参数转换成数组，然后拼接到一起。
 
 为啥 要用 `core_slice` （[].slice.call）据我所知，数组直接slice就可以了，并无啥区别。
 
