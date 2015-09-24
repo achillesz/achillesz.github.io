@@ -43,6 +43,12 @@ tags: [proxy,Core]
 
 支持第一个参数是个对象，第二个参数是第一个参数需要代理的方法名 是字符窜
 
+```js
+
+var bbb = {a: function() {console.log(arguments)}}; var temp = $.proxy(bbb.a, bbb, '2'); temp('1')
+
+```
+
 另一种常见的方法就是，直接带入函数，以及期望的上下文
 
 
