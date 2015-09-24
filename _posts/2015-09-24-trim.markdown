@@ -65,8 +65,7 @@ tags: [trim,Core]
 空白字符的匹配上还有很多别的问题。[了解更多] [知乎]
 
 [了解更多]:	https://imququ.com/post/bom-and-javascript-trim.html
-
-[知乎]:	http://www.zhihu.com/question/20129435
+[知乎]:		http://www.zhihu.com/question/20129435
 
 
 
