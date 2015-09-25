@@ -36,7 +36,9 @@ tags: [is,Core]
 上面这个代码的意思是，如果用表达式判断类型为对象或者函数的时候，就会使用更高级的判断方法。否则用我们的typeof就可以了。
 但不解的是，后面那个 `class2type[ toString.call(obj) ] || "object" `
 
+[参考网址][aaa]
 
+[aaa]: http://www.365mini.com/page/jquery_iswindow.htm
 
 
 
