@@ -1,0 +1,61 @@
+---
+layout: post
+title: "类型判断"
+date:   2015-09-25 10:53:36
+categories: [jQuery]
+tags: [is,Core]
+---
+
+空对象toString的函数会返回一个
+
+|obj|result1|
+|:---:|:---:|
+|字符窜|[object String]|
+|函数|[object Function]|
+
+我们知道类型返回的结果，JQ 把它作为KEY，值简化成一个直观的小写。
+
+```js
+	jQuery.each("Boolean Number String Function Array Date RegExp Object Error".split(" "), function(i, name) {
+    	class2type[ "[object " + name + "]" ] = name.toLowerCase();
+    });
+```
+
+```js
+	type: function( obj ) {
+		if ( obj == null ) {
+			return obj + "";
+		}
+		// Support: Android < 4.0, iOS < 6 (functionish RegExp)
+		return typeof obj === "object" || typeof obj === "function" ?
+			class2type[ toString.call(obj) ] || "object" :
+			typeof obj;
+	}
+```
+
+上面这个代码的意思是，如果用表达式判断类型为对象或者函数的时候，就会使用更高级的判断方法。否则用我们的typeof就可以了。
+但不解的是，后面那个 `class2type[ toString.call(obj) ] || "object" `
+
+
+
+空白字符的匹配上还有很多别的问题。[了解更多][imququ] [知乎][zhihu]
+
+[imququ]:	https://imququ.com/post/bom-and-javascript-trim.html
+[zhihu]:		http://www.zhihu.com/question/20129435
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
