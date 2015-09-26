@@ -6,7 +6,7 @@ categories: [jQuery]
 tags: [is,Core]
 ---
 
-### 静态方法type
+#### 静态方法type
 
 空对象toString的函数会返回一个
 
@@ -38,7 +38,7 @@ tags: [is,Core]
 上面这个代码的意思是，如果用表达式判断类型为对象或者函数的时候，就会使用更高级的判断方法。否则用我们的typeof就可以了。
 但不解的是，后面那个 `class2type[ toString.call(obj) ] || "object" `
 
-### 是不是window对象的判断
+#### 是不是window对象的判断
 
 ```js
         isWindow: function(obj) {
