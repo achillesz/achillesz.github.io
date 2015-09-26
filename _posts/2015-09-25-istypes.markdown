@@ -6,6 +6,8 @@ categories: [jQuery]
 tags: [is,Core]
 ---
 
+### 静态方法type
+
 空对象toString的函数会返回一个
 
 |obj|result1|
@@ -36,10 +38,18 @@ tags: [is,Core]
 上面这个代码的意思是，如果用表达式判断类型为对象或者函数的时候，就会使用更高级的判断方法。否则用我们的typeof就可以了。
 但不解的是，后面那个 `class2type[ toString.call(obj) ] || "object" `
 
+### 是不是window对象的判断
+
+```js
+        isWindow: function(obj) {
+            return obj != null && obj === obj.window;
+        },
+```
+根据 ECMAScript 标准要求，所有的 JavaScript 解释器都要将Window对象视作全局对象(global)，并且 `global.window = global` (其window属性引用自身)。根据该标准，jQuery使用如下代码来判断指定对象是否是一个Window对象
+
 [参考网址][aaa]
 
 [aaa]: http://www.365mini.com/page/jquery_iswindow.htm
-
 
 
 
