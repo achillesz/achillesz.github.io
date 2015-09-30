@@ -1,0 +1,78 @@
+---
+layout: post
+title: "eq pushStack merge"
+date:   2015-09-30 18:31:36
+categories: [jQuery]
+tags: [eq,Core]
+---
+
+
+
+* 传入正数
+* 传入负数
+
+最终得到类数组的某一项，然后放入数组
+
+```js
+	eq: function(i) {
+		var len = this.length,
+			j = +i + (i < 0 ? len : 0);
+		return this.pushStack(j >= 0 && j < len ? [this[j]] : []);
+	},
+```
+
+`pushStack` 用来返回新成成的对象，并且保存了 `preObject` 原来对象的属性
+
+```js
+
+	pushStack: function(elems) {
+		// Build a new jQuery matched element set
+		var ret = jQuery.merge(this.constructor(), elems);
+
+		// Add the old object onto the stack (as a reference)
+		ret.prevObject = this;
+		ret.context = this.context;
+
+		// Return the newly-formed element set
+		return ret;
+	}
+```
+
+
+
+```js
+	 merge: function(first, second) {
+		 var l = second.length,
+			 i = first.length,
+			 j = 0;
+
+		 if (typeof l === "number") {
+			 for (; j < l; j++) {
+				 first[i++] = second[j];
+			 }
+		 } else {
+			 while (second[j] !== undefined) {
+				 first[i++] = second[j++];
+			 }
+		 }
+
+		 first.length = i;
+
+		 return first;
+	 }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
