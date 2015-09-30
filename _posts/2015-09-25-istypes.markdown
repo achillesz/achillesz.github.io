@@ -113,12 +113,13 @@ tags: [is,Core]
 
 #### 是否数组
 
-
 现代版本
+
 ```js
  isArray: Array.isArray,
 ```
 早期版本
+
 ```js
 	isArray: Array.isArray || function( obj ) {
 		return jQuery.type(obj) === "array";
