@@ -51,6 +51,30 @@ tags: [is,Core]
 
 [aaa]: http://www.365mini.com/page/jquery_iswindow.htm
 
+#### 是否空对象判断
+
+```js
+       isEmptyObject: function(obj) {
+            var name;
+            for (name in obj) {
+                return false;
+            }
+            return true;
+        }
+```
+
+显然没有自定义属性的对象，就是空对象
+
+#### 是否纯粹对象（感觉没啥用）
+
+* 不是对象的情况直接排除
+* 存在节点类型的排除
+* window对象排除
+* 存在构造器且原型不含有自定义属性 `isPrototypeOf` 说明不是由 `Object` 构造 排除
+* 最后说明是由Object构建的对象。
+
+
+
 
 
 
