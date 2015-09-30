@@ -103,6 +103,32 @@ tags: [is,Core]
 
 ```
 
+#### 是否函数
+
+```js
+   isFunction: function(obj) {
+            return jQuery.type(obj) === "function";
+        }
+```
+
+### 是否数组
+
+
+现代版本
+```js
+ isArray: Array.isArray,
+```
+早期版本
+```js
+	isArray: Array.isArray || function( obj ) {
+		return jQuery.type(obj) === "array";
+	},
+```
+
+`Array.isArray` 是原生的静态方法 `Array.isArray = function() {}`
+
+
+
 
 
 
