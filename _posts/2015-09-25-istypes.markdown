@@ -140,24 +140,33 @@ tags: [is,Core]
 
 `isFinite()` 如果 number 是有限数字（或可转换为有限数字），那么返回 true。否则，如果 number 是 NaN（非数字），或者是正、负无穷大的数，则返回 false。
 
+#### `isArraylike` 的判断 
+
+```js
+    function isArraylike(obj) {
+        var length = obj.length,
+            type = jQuery.type(obj);
+
+        if (jQuery.isWindow(obj)) {
+            return false;
+        }
+
+        if (obj.nodeType === 1 && length) {
+            return true;
+        }
+
+        return type === "array" || type !== "function" &&
+            (length === 0 ||
+            typeof length === "number" && length > 0 && (length - 1) in obj);
+    }
+
+```
+`window` 对象返回假，元素节点返回假。
+
+如果是数组类型，那一定OK。
+不是数组的话，长度等于0,OK。
+长度不是0,但是数字类型，且大于0的情况（排除负数），看是不是对象的自定义属性。
+之所以，加了且类型不为函数，是因为函数的 `length` 属性是表示参数的个数。
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+其实还应该排除一个空字符窜。
