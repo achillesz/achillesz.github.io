@@ -24,3 +24,73 @@ tags: [Callbacks]
 * `stopOnFalse` 表示执行过程中返回 false的时候，停止本次执行， `stack` 中的还是可以执行的。
 * `unique` 表示队列中函数应该是唯一的。不能重复 `add`
 
+```js
+add: function() {
+	if (list) {
+		var start = list.length;
+		(function add(args) { 
+			jQuery.each(args, function(_, arg) {
+				var type = jQuery.type(arg);
+				if (type === "function") {
+					if (!options.unique || !self.has(arg)) {
+						list.push(arg);
+					}	
+				} else if (arg && arg.length && type !== "string") {	
+					add(arg);
+				}
+			});
+		})(arguments);
+		if (firing) {
+			firingLength = list.length;
+		} else if (memory) {
+			firingStart = start;
+			fire(memory);
+		}
+	}
+	return this;
+}
+```
+
+```js
+fireWith: function(context, args) { 
+	if (list && (!fired || stack)) {
+		args = args || [];
+		args = [context, args.slice ? args.slice() : args];
+		if (firing) {
+			stack.push(args);
+		} else { 
+			fire(args);
+		}
+	}
+	return this;
+}
+```
+
+```js
+fire = function(data) {
+	memory = options.memory && data;
+	fired = true;
+	firingIndex = firingStart || 0;
+	firingStart = 0;
+	firingLength = list.length;
+	firing = true;
+	for (; list && firingIndex < firingLength; firingIndex++) {
+		if (list[firingIndex].apply(data[0], data[1]) === false && options.stopOnFalse) {
+			memory = false; 
+			break; 
+		}
+	}
+	firing = false;
+	if (list) {
+		if (stack) {
+			if (stack.length) {
+				fire(stack.shift());
+			}
+		} else if (memory) {			
+			list = [];
+		} else { 
+			self.disable();
+		}
+	}
+}
+```
