@@ -6,12 +6,13 @@ categories: [ext]
 tags: [Callbacks]
 ---
 
-apply此处的一个作用只是把arguments 完全拿过来使用，显然用到了 `apply`, 也用到了 `Manager`
+apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 `Manager`
+显然用到了 `apply`, 也用到了 `Manager`
 
 ```js
- Ext.apply(Ext,{
- 	define: functionL() {}
- })
+	Ext.apply(Ext,{
+	define: functionL() {}
+	})
 ```
 
 ```js
@@ -24,3 +25,56 @@ apply此处的一个作用只是把arguments 完全拿过来使用，显然用�
 	},
 ```
 
+`apply` 
+
+```js
+    Ext.apply = function(object, config, defaults) {
+        if (defaults) {
+            Ext.apply(object, defaults);
+        }
+
+        if (object && config && typeof config === 'object') {
+            var i, j, k;
+
+            for (i in config) {
+                object[i] = config[i];
+            }
+
+            if (enumerables) {
+                for (j = enumerables.length; j--;) {
+                    k = enumerables[j];
+                    if (config.hasOwnProperty(k)) {
+                        object[k] = config[k];
+                    }
+                }
+            }
+        }
+
+        return object;
+    };
+```
+
+这个 `apply` 的作用是遍历对象，但很显然只是做了 `jQuery` 的浅复制 `enumerables` 的判断是不是有问题
+
+```js
+	  enumerables = true,
+      enumerablesTest = { toString: 1 },
+      
+      
+	  for (i in enumerablesTest) {
+		  enumerables = null;
+	  }
+  
+	  if (enumerables) {
+		  enumerables = ['hasOwnProperty', 'valueOf', 'isPrototypeOf', 'propertyIsEnumerable',
+						 'toLocaleString', 'toString', 'constructor'];
+	  }
+```
+
+一般来讲，重新定义了某些原生属性，枚举的时候应该是可以枚举到的，但有些浏览器可能枚举不到。对于枚举不到的，我们用 `hasOwnProperty` 来判断是不是自定义属性，
+
+这里我们就是这样： 先去遍历自定义的 `toString` 如果可以，表明浏览器是支持枚举自定义属性的。设置为 `null`, 也即，不需要用 `hasOwnProperty` 来判断了。
+
+到此，应该把 `Ext.apply` 说清楚了。
+
+但是 `define` 的关键在于 `Manager`
