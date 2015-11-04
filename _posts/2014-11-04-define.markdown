@@ -15,12 +15,12 @@ apply此处的一个作用只是把arguments 完全拿过来使用，显然用�
 ```
 
 ```js
-        define: function (className, data, createdFn) {
-            if (data.override) {
-                return Manager.createOverride.apply(Manager, arguments);
-            }
+	define: function (className, data, createdFn) {
+		if (data.override) {
+			return Manager.createOverride.apply(Manager, arguments);
+		}
 
-            return Manager.create.apply(Manager, arguments);
-        },
+		return Manager.create.apply(Manager, arguments);
+	},
 ```
 
