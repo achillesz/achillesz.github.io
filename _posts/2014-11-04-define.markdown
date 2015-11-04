@@ -1,0 +1,26 @@
+---
+layout: post
+title: "define"
+date:   2015-11-04 18:11:36
+categories: [ext]
+tags: [Callbacks]
+---
+
+apply此处的一个作用只是把arguments 完全拿过来使用，显然用到了 `apply`, 也用到了 `Manager`
+
+```js
+ Ext.apply(Ext,{
+ 	define: functionL() {}
+ })
+```
+
+```js
+        define: function (className, data, createdFn) {
+            if (data.override) {
+                return Manager.createOverride.apply(Manager, arguments);
+            }
+
+            return Manager.create.apply(Manager, arguments);
+        },
+```
+
