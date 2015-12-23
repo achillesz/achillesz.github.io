@@ -21,7 +21,13 @@ tags: [eq,Core]
 	},
 ```
 
-`pushStack` 用来返回新成成的对象，并且保存了 `preObject` 原来对象的属性
+`pushStack` 用来返回新生成的对象，并且保存了 `preObject` 原来对象的属性
+
+大体操作过程传入这个elems,是个放在数组里的DOM元素，就是数组。
+
+然后把它变成jQuery对象，为啥要传入一个数组，是为了把这一项，merge 到一个空的jQuery对象里面。
+
+然后在保存之前的引用。
 
 ```js
 
