@@ -19,3 +19,11 @@ tags: [创建分支]
 ```
 
 这样以后就可以 pull/push 直接拉/推 了。
+
+至于上面几个命令的理解：
+
+```text
+	git checkout -b [分支名] [远程名]/[分支名]
+    git checkout -b serverfix origin/serverfix
+```
+
