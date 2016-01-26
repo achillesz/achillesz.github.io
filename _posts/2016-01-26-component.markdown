@@ -325,7 +325,7 @@ tags: [google closure]
 
 `getId` 自带设值功能，没有用到重写设置 `setId` 的情况
 
-### forEachChild
+#### forEachChild
 
 ```js
 	$.ui.Component.prototype.forEachChild = function(fn, opt_this) {
