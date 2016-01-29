@@ -23,7 +23,7 @@ tags: [google closure]
 ```js
 	return $(html, this.document_);
 ```
-当前文档下创建DOM元素
+当前文档下创建DOM元素,这么看涉及到 `createDom` 的时候还是应该用 `createElement`, 也可以 `createDom` 继承一下，走默认调用，确保在正确的文档里
 	
 	
 #### createDom
@@ -82,7 +82,7 @@ tags: [google closure]
 
 表示内容元素 `content` 的容器
 
-### render
+#### render
 
 ```js
 
