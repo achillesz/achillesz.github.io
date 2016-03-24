@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: "linux edit"
+date:   2016-03-24 08:51:36
+categories: [linux]
+tags: [vim]
+---
+## edit 编辑已经存在的文件
+
+## edit 编辑相对目录文件
+
+## edit %<Tab> 展开当前文件路径
