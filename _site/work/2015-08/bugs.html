@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>产品中心BUG处理 - febbc</title>
+  <title>HTML单引号导致的BUG - febbc</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="achilles">
@@ -79,18 +79,19 @@
         </div>
         <div class="row clearfix">
           <div class="col-md-12">
-  <h2 class="title"> 产品中心BUG处理 <time class="small">2015.08.14</time></h2>
+  <h2 class="title"> HTML单引号导致的BUG <time class="small">2015.08.14</time></h2>
   <div id="code" class="qrcode visible-lg"></div>
-  <dl>
-    <dt>需要读取且回传给后端的数据，悲剧的单引号</dt>
-    <dd>
-        <pre>
-<!--<input type="text" id="classifyPriceData" name="availableDateSetData" value='{"title":"当训象师和大象做朋友——Bobby's大象之家（成人）"}'/>-->
-</pre>
-    </dd>
-</dl>
+  <p>需要读取且回传给后端的数据，悲剧的单引号
+&lt;!-- more --&gt;</p>
 
-<input type="hidden" id="classifyPriceData" name="availableDateSetData" value='{\"title\":\"\u5F53\u8BAD\u8C61\u5E08\u548C\u5927\u8C61\u505A\u670B\u53CB\u2014\u2014Bobby&#39;s\u5927\u8C61\u4E4B\u5BB6\uFF08\u6210\u4EBA\uFF09\"}'/>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> 
+ <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">id=</span><span class="s">&quot;classifyPriceData&quot;</span> <span class="na">name=</span><span class="s">&quot;availableDateSetData&quot;</span> <span class="na">value=</span><span class="s">&#39;{&quot;title&quot;:&quot;当训象师和大象做朋友——Bobby&#39;</span><span class="na">s</span><span class="err">大象之家（成人）&quot;}&#39;</span><span class="nt">/&gt;</span>
+
+ </code></pre></figure>
+
+<!-- more -->
+
+<p>这样HTML解析的时候无法正确的匹配引号，导致问题。解决方案是如果值需要回传给后端，应在后端给出的值中做转义，如果不需要给后端，可以直接拍到JS的某个属性里。</p>
 
   <ul class="pager">
     
@@ -102,6 +103,10 @@
   </ul>
 
 
+<div id="comments">
+  <div class="ds-thread" data-thread-key="/work/2015-08/bugs"  data-title="HTML单引号导致的BUG - febbc" data-url="//achillesz.github.io/work/2015-08/bugs.html"></div>
+</div>
+
 
 </div>
 
@@ -109,7 +114,7 @@
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2015 <a href="//achillesz.github.io" title="">achilles</a>. with Help from <a href="//jekyllrb.com/" title="Transform your plain text into static websites and blogs.">Jekyll</a> and <a href="//getbootstrap.com/" title="Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.">Bootstrap</a></p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 
@@ -130,6 +135,20 @@
 
     
 
+    
+    <!-- duoshuo Begin -->
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"febbc"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    <!-- duoshuo End -->
     
   </body>
 </html>

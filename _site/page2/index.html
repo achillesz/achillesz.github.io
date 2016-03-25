@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="canonical" href="//achillesz.github.io/page2/index.html">
+  <link rel="canonical" href="//achillesz.github.io/page2/">
 
   <link rel="stylesheet" href="/assets/css/style.css" media="all">
 
@@ -78,62 +78,122 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="col-md-9">
+          <style>
+  #ds-recent-comments li.ds-comment {
+    border-top: none !important;
+    border-bottom: none !important;
+    list-style-type: disc !important;
+  }
+
+  #ds-recent-comments li.ds-comment div {
+    display: none !important;
+  }
+
+  #ds-recent-comments li.ds-comment {
+    padding: 0px 0px !important;
+    line-height: 1.8 !important;
+    font-size: 16px !important;
+  }
+
+  #ds-recent-visitors {
+    padding: 0 25px; !important;
+  }
+
+  #ds-recent-visitors .ds-avatar {
+    margin: 2px 0 !important;
+  }
+
+  .ds-avatar a img, .ds-avatar img {
+    margin: 2px !important;
+    border: 1px solid rgb(50, 118, 177);
+    border-radius: 4px; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  #ds-thread #ds-reset .ds-powered-by {
+    display: none !important;
+  }
+</style>
+<div class="col-md-9">
   
-  <h3 class="title"><a href="/jekyll/update/2015-08/welcome-to-jekyll.html">欢迎来到febbc</a></h3>
+  <h3 class="title"><a href="/2015-12-29-vim-move/">linux 移动操作</a></h3>
   
-  You’ll find this post in your _posts directory....
-  
-  
-  <h3 class="title"><a href="/demo/2014-08/test-post.html">测试文章</a></h3>
-  
-  这是一个 代码块
+  <div  class="bbb"> 半屏
+control+U :文本向上滚半屏
+control+D :文本向下滚半屏
 
-这是一个 粗体
+一行
+control+E :文本向下滚动一行
+control+Y :文本向上滚动一行
 
-这是一个 斜体
-这是一个代码段
+翻页
+control+F :文本向下滚动一屏,实际上是整屏减去2行。
+control+b :文本向上滚动一屏，同上。
 
+位置
 
-这是一个引用
+zz 把当前行置为屏幕的中央
 
+zt 把当前行置于屏幕的顶端
 
-  
-  
-  <h3 class="title"><a href="/demo/2014-08/hello-jekyll.html">Hello Jekyll!</a></h3>
-  
-  测试 h1
-
-测试 h2
-
-测试 h3
-
-测试 h4
-
-测试 h5
-
-测试 h6
-
-测试粗体
-...
+zb 把当前行置于屏幕的底端
+... </div>
   
   
-  <h3 class="title"><a href="/demo/2014-08/welcome-to-jekyll.html">Welcome to Jekyll!</a></h3>
+  <h3 class="title"><a href="/2015-12-28-deferred/">chrome 您的链接不是私密链接</a></h3>
   
-  测试 h1
+  <div  class="bbb"> 1.打开chrome://flags
+2.找到“允许来自https来源的不安全WebSocket”
+3.点启用，然后重启浏览器
 
-测试 h2
+ </div>
+  
+  
+  <h3 class="title"><a href="/2015-11-05-define/">define</a></h3>
+  
+  <div  class="bbb"> apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
+显然用到了 apply, 也用到了 Manager
 
-测试 h3
+	Ext.apply(Ext,{
+	define: functionL() {}
+	})
 
-测试 h4
 
-测试 h5
 
-测试 h6
+	define: function (className, data, createdFn) {
+		if (data.ove... </div>
+  
+  
+  <h3 class="title"><a href="/2015-10-28-CallBacks/">Callbacks模块解析</a></h3>
+  
+  <div  class="bbb"> 某个时候调用某个函数，这个函数被称作回调函数。
 
-测试粗体
-...
+某个时候，要干某些事情，某些事情分别由不同的函数来完成，并且应该有先后顺序。
+
+回调列表就是用来解决这个问题的。
+
+
+  add的函数，被放在LIST列表，调用的时候遍历，按照添加的先后顺序依次调用各函数，注意某个时候，参数是相同的，执行所有的函数一遍
+  如果add的时候，调用已经结束，且是 memory 的情况下，那么直接执行。 否则不执... </div>
+  
+  
+  <h3 class="title"><a href="/2015-10-01-eq/">eq pushStack merge</a></h3>
+  
+  <div  class="bbb"> 
+  传入正数
+  传入负数
+
+
+最终得到类数组的某一项，然后放入数组
+
+	eq: function(i) {
+		var len = this.length,
+			j = +i + (i &lt; 0 ? len : 0);
+		return this.pushStack(j &gt;= 0 &amp;&amp; j &lt; len ? [this[j]] : []);
+	},
+
+
+
+... </div>
   
   
 
@@ -145,10 +205,10 @@
     <a class="btn btn-primary btn-sm" href="/">&laquo; Prev</a>
     
     
-    <span><a class="btn btn-primary btn-sm disabled">Page: 2 of 2</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">Page: 2 of 6</a></span>
     
-    <span><a class="btn btn-primary btn-sm disabled">Next &raquo;</a></span>
-    <span><a class="btn btn-primary btn-sm disabled">Last</a></span>
+    <a class="btn btn-primary btn-sm" href="/page3/">Next &raquo;</a>
+    <a class="btn btn-primary btn-sm" href="/page6/">Last</a>
     
   </div>
 </div>
@@ -161,7 +221,19 @@
   <ul>
     
     
+    <li><a href="/categories.html#chrome" rel="nofollow">chrome</a></li>
+    
+    
     <li><a href="/categories.html#demo" rel="nofollow">demo</a></li>
+    
+    
+    <li><a href="/categories.html#ext" rel="nofollow">ext</a></li>
+    
+    
+    <li><a href="/categories.html#git" rel="nofollow">git</a></li>
+    
+    
+    <li><a href="/categories.html#jQuery" rel="nofollow">jQuery</a></li>
     
     
     <li><a href="/categories.html#javascript" rel="nofollow">javascript</a></li>
@@ -171,6 +243,12 @@
     
     
     <li><a href="/categories.html#jquery" rel="nofollow">jquery</a></li>
+    
+    
+    <li><a href="/categories.html#js" rel="nofollow">js</a></li>
+    
+    
+    <li><a href="/categories.html#linux" rel="nofollow">linux</a></li>
     
     
     <li><a href="/categories.html#update" rel="nofollow">update</a></li>
@@ -185,28 +263,35 @@
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/javascript/jquery/2015-08/jquery-event.html" title="jquery-event">jquery-event</a></li>
+    <li><a href="/2016-03-24-edit-vim/" title="linux edit">linux edit</a></li>
     
-    <li><a href="/javascript/2015-08/grade.html" title="javascript优先级">javascript优先级</a></li>
+    <li><a href="/2016-01-29-quote/" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/work/2015-08/bugs.html" title="产品中心BUG处理">产品中心BUG处理</a></li>
+    <li><a href="/2016-01-26-component/" title="Component介绍">Component介绍</a></li>
     
-    <li><a href="/work/2015-08/price-chanel.html" title="票种模块业务">票种模块业务</a></li>
+    <li><a href="/2016-01-12-delete-branch/" title="git 删除远程分支">git 删除远程分支</a></li>
     
-    <li><a href="/work/2015-08/%E6%BC%94%E5%87%BA%E7%A5%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%95%B0%E6%8D%AE.html" title="演出票前后端交互数据">演出票前后端交互数据</a></li>
+    <li><a href="/2016-01-11-create-branch/" title="git 创建分支命令">git 创建分支命令</a></li>
     
-    <li><a href="/jekyll/update/2015-08/welcome-to-jekyll.html" title="欢迎来到febbc">欢迎来到febbc</a></li>
+    <li><a href="/2015-12-29-vim-move/" title="linux 移动操作">linux 移动操作</a></li>
     
-    <li><a href="/demo/2014-08/test-post.html" title="测试文章">测试文章</a></li>
+    <li><a href="/2015-12-28-deferred/" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
     
-    <li><a href="/demo/2014-08/hello-jekyll.html" title="Hello Jekyll!">Hello Jekyll!</a></li>
+    <li><a href="/2015-11-05-define/" title="define">define</a></li>
     
-    <li><a href="/demo/2014-08/welcome-to-jekyll.html" title="Welcome to Jekyll!">Welcome to Jekyll!</a></li>
+    <li><a href="/2015-10-28-CallBacks/" title="Callbacks模块解析">Callbacks模块解析</a></li>
+    
+    <li><a href="/2015-10-01-eq/" title="eq pushStack merge">eq pushStack merge</a></li>
     
   </ul>
 </section>
 
   
+<section>
+  <h3 class="title">Recently Comments</h3>
+  <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="0" data-show-time="0" data-show-title="0" data-show-admin="1" data-excerpt-length="26"></ul>
+</section>
+
 
   
 <section>
@@ -227,7 +312,7 @@
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2015 <a href="//achillesz.github.io" title="">achilles</a>. with Help from <a href="//jekyllrb.com/" title="Transform your plain text into static websites and blogs.">Jekyll</a> and <a href="//getbootstrap.com/" title="Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.">Bootstrap</a></p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 
@@ -242,12 +327,26 @@
       $("#code").qrcode({
         width: 150,
         height: 150,
-        text: "http://achillesz.github.io/page2/index.html"
+        text: "http://achillesz.github.io/page2/"
       });
     </script>
 
     
 
+    
+    <!-- duoshuo Begin -->
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"febbc"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    <!-- duoshuo End -->
     
   </body>
 </html>

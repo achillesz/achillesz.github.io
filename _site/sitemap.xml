@@ -5,65 +5,184 @@
 
   
   <url>
-    <loc>//achillesz.github.io/javascript/jquery/2015-08/jquery-event.html</loc>
+    <loc>//achillesz.github.io/2016-03-24-edit-vim/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-03-24T16:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2016-01-29-quote/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-01-29T19:41:11+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2016-01-26-component/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-01-26T19:41:11+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2016-01-12-delete-branch/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-01-12T03:16:11+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2016-01-11-create-branch/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-01-11T23:12:11+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-12-29-vim-move/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-12-29T04:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-12-28-deferred/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-12-28T18:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-11-05-define/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-11-05T02:11:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-10-28-CallBacks/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-10-28T02:11:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-10-01-eq/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-10-01T02:31:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-25-istypes/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-25T18:53:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-25-trim/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-25T04:54:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-24-proxy/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-24T01:54:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-23-noconflict1/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-23T23:37:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-18-blur/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-18T19:38:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-11-inherit/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-11T23:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-11-usage/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-11T05:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-10-call-apply/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-10T00:00:00+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-07-vim-cp/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-07T04:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-09-07-type/</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2015-09-07T04:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/2015-08-27-jquery-event/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-08-27T22:57:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>//achillesz.github.io/javascript/2015-08/grade.html</loc>
+    <loc>//achillesz.github.io/2015-08-19-grade/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-08-19T18:21:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>//achillesz.github.io/work/2015-08/bugs.html</loc>
+    <loc>//achillesz.github.io/2015-08-14-bugs/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-08-14T22:56:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>//achillesz.github.io/work/2015-08/price-chanel.html</loc>
+    <loc>//achillesz.github.io/2015-08-13-price-chanel/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-08-13T22:56:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>//achillesz.github.io/work/2015-08/%E6%BC%94%E5%87%BA%E7%A5%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%95%B0%E6%8D%AE.html</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2015-08-12T21:24:36+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>//achillesz.github.io/jekyll/update/2015-08/welcome-to-jekyll.html</loc>
+    <loc>//achillesz.github.io/2015-08-04-welcome-to-jekyll/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-08-04T06:14:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>//achillesz.github.io/demo/2014-08/test-post.html</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2014-08-16T00:00:00+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>//achillesz.github.io/demo/2014-08/hello-jekyll.html</loc>
+    <loc>//achillesz.github.io/2014-08-13-hello-jekyll/</loc>
     <changefreq>daily</changefreq>
     <lastmod>2014-08-13T00:00:00+08:00</lastmod>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>//achillesz.github.io/demo/2014-08/welcome-to-jekyll.html</loc>
-    <changefreq>daily</changefreq>
-    <lastmod>2014-08-12T00:00:00+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   

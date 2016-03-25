@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="canonical" href="//achillesz.github.io/index.html">
+  <link rel="canonical" href="//achillesz.github.io/">
 
   <link rel="stylesheet" href="/assets/css/style.css" media="all">
 
@@ -78,55 +78,116 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="col-md-9">
+          <style>
+  #ds-recent-comments li.ds-comment {
+    border-top: none !important;
+    border-bottom: none !important;
+    list-style-type: disc !important;
+  }
+
+  #ds-recent-comments li.ds-comment div {
+    display: none !important;
+  }
+
+  #ds-recent-comments li.ds-comment {
+    padding: 0px 0px !important;
+    line-height: 1.8 !important;
+    font-size: 16px !important;
+  }
+
+  #ds-recent-visitors {
+    padding: 0 25px; !important;
+  }
+
+  #ds-recent-visitors .ds-avatar {
+    margin: 2px 0 !important;
+  }
+
+  .ds-avatar a img, .ds-avatar img {
+    margin: 2px !important;
+    border: 1px solid rgb(50, 118, 177);
+    border-radius: 4px; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  #ds-thread #ds-reset .ds-powered-by {
+    display: none !important;
+  }
+</style>
+<div class="col-md-9">
   
-  <h3 class="title"><a href="/javascript/jquery/2015-08/jquery-event.html">jquery-event</a></h3>
+  <h3 class="title"><a href="/2016-03-24-edit-vim/">linux edit</a></h3>
   
-  You’ll find this post in your _posts directory....
-  
-  
-  <h3 class="title"><a href="/javascript/2015-08/grade.html">javascript优先级</a></h3>
-  
-  运算符   描述
-.  字段访问、数组下标、函数调用以及表达式分组
-++ -- - ~ ! d...
+  <div  class="bbb"> edit 编辑已经存在的文件
+
+edit 编辑相对目录文件
+
+edit % 展开当前文件路径
+ </div>
   
   
-  <h3 class="title"><a href="/work/2015-08/bugs.html">产品中心BUG处理</a></h3>
+  <h3 class="title"><a href="/2016-01-29-quote/">html引号转义问题</a></h3>
   
-  
-    需要读取且回传给后端的数据，悲剧的单引号
-    
-        
+  <div  class="bbb"> 描述：
 
 
-    
-
-
-
-
+  
+    html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
+目前产品线上，产品名显示的时候 都是这样 &lt;input id="aaaa" type="text" value='sdffdf'/&gt;
+双引号的时候也不会有问题，但是有海外的产品录入，都成了英文了，会有单引号的问题。这个无法解决。也无法克服。对于JS的反斜杠转义在这里没... </div>
   
   
-  <h3 class="title"><a href="/work/2015-08/price-chanel.html">票种模块业务</a></h3>
+  <h3 class="title"><a href="/2016-01-26-component/">Component介绍</a></h3>
   
-  属性解释
+  <div  class="bbb"> 类说明
+
+	$.ui.Component = function(opt_doc) {
+		this.document_ = opt_doc || window.document;
+	};
 
 
-    canusedate
-    分类下设置使用日期快
-    
-    
-...
+
+new 的时候保存一个所在文档的属性
+
+方法说明：
+
+createElement
+
+	return $(html, this.document_);
+
+
+当前文档下创建DOM元素,这么看涉及到 cre... </div>
   
   
-  <h3 class="title"><a href="/work/2015-08/%E6%BC%94%E5%87%BA%E7%A5%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%95%B0%E6%8D%AE.html">演出票前后端交互数据</a></h3>
+  <h3 class="title"><a href="/2016-01-12-delete-branch/">git 删除远程分支</a></h3>
   
-  spuInfo字段下的数据，里面包含规格信息specInfo
+  <div  class="bbb"> 	git push origin :needDelBranchName
 
 
 
-{
-        &qu...
+如何理解：
+text
+	git push origin serverfix:serverfix 
+    git push origin refs/heads/serverfix:refs/heads/serverfix
+
+
+git push [远程名] [本地分支]:[远程分支]
+
+如果省略 [本地分支]，那就等... </div>
+  
+  
+  <h3 class="title"><a href="/2016-01-11-create-branch/">git 创建分支命令</a></h3>
+  
+  <div  class="bbb"> 
+  先切换到主分支（一般从master新建分支）
+  新建并切换到分支
+  分支push到远程
+  建立关联
+
+
+	git checkout master
+	git checkout -b branchName
+	git push origin branchName
+	git branch --set-upstream-to=origin/0111-marketing branchName... </div>
   
   
 
@@ -136,10 +197,10 @@
     <span><a class="btn btn-primary btn-sm disabled" href="/">Home</a></span>
     <span><a class="btn btn-primary btn-sm disabled">&laquo; Prev</a></span>
     
-    <span><a class="btn btn-primary btn-sm disabled">Page: 1 of 2</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">Page: 1 of 6</a></span>
     
     <a class="btn btn-primary btn-sm" href="/page2/">Next &raquo;</a>
-    <a class="btn btn-primary btn-sm" href="/page2/">Last</a>
+    <a class="btn btn-primary btn-sm" href="/page6/">Last</a>
     
   </div>
 </div>
@@ -152,7 +213,19 @@
   <ul>
     
     
+    <li><a href="/categories.html#chrome" rel="nofollow">chrome</a></li>
+    
+    
     <li><a href="/categories.html#demo" rel="nofollow">demo</a></li>
+    
+    
+    <li><a href="/categories.html#ext" rel="nofollow">ext</a></li>
+    
+    
+    <li><a href="/categories.html#git" rel="nofollow">git</a></li>
+    
+    
+    <li><a href="/categories.html#jQuery" rel="nofollow">jQuery</a></li>
     
     
     <li><a href="/categories.html#javascript" rel="nofollow">javascript</a></li>
@@ -162,6 +235,12 @@
     
     
     <li><a href="/categories.html#jquery" rel="nofollow">jquery</a></li>
+    
+    
+    <li><a href="/categories.html#js" rel="nofollow">js</a></li>
+    
+    
+    <li><a href="/categories.html#linux" rel="nofollow">linux</a></li>
     
     
     <li><a href="/categories.html#update" rel="nofollow">update</a></li>
@@ -176,28 +255,35 @@
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/javascript/jquery/2015-08/jquery-event.html" title="jquery-event">jquery-event</a></li>
+    <li><a href="/2016-03-24-edit-vim/" title="linux edit">linux edit</a></li>
     
-    <li><a href="/javascript/2015-08/grade.html" title="javascript优先级">javascript优先级</a></li>
+    <li><a href="/2016-01-29-quote/" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/work/2015-08/bugs.html" title="产品中心BUG处理">产品中心BUG处理</a></li>
+    <li><a href="/2016-01-26-component/" title="Component介绍">Component介绍</a></li>
     
-    <li><a href="/work/2015-08/price-chanel.html" title="票种模块业务">票种模块业务</a></li>
+    <li><a href="/2016-01-12-delete-branch/" title="git 删除远程分支">git 删除远程分支</a></li>
     
-    <li><a href="/work/2015-08/%E6%BC%94%E5%87%BA%E7%A5%A8%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%95%B0%E6%8D%AE.html" title="演出票前后端交互数据">演出票前后端交互数据</a></li>
+    <li><a href="/2016-01-11-create-branch/" title="git 创建分支命令">git 创建分支命令</a></li>
     
-    <li><a href="/jekyll/update/2015-08/welcome-to-jekyll.html" title="欢迎来到febbc">欢迎来到febbc</a></li>
+    <li><a href="/2015-12-29-vim-move/" title="linux 移动操作">linux 移动操作</a></li>
     
-    <li><a href="/demo/2014-08/test-post.html" title="测试文章">测试文章</a></li>
+    <li><a href="/2015-12-28-deferred/" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
     
-    <li><a href="/demo/2014-08/hello-jekyll.html" title="Hello Jekyll!">Hello Jekyll!</a></li>
+    <li><a href="/2015-11-05-define/" title="define">define</a></li>
     
-    <li><a href="/demo/2014-08/welcome-to-jekyll.html" title="Welcome to Jekyll!">Welcome to Jekyll!</a></li>
+    <li><a href="/2015-10-28-CallBacks/" title="Callbacks模块解析">Callbacks模块解析</a></li>
+    
+    <li><a href="/2015-10-01-eq/" title="eq pushStack merge">eq pushStack merge</a></li>
     
   </ul>
 </section>
 
   
+<section>
+  <h3 class="title">Recently Comments</h3>
+  <ul class="ds-recent-comments" data-num-items="10" data-show-avatars="0" data-show-time="0" data-show-title="0" data-show-admin="1" data-excerpt-length="26"></ul>
+</section>
+
 
   
 <section>
@@ -218,7 +304,7 @@
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2015 <a href="//achillesz.github.io" title="">achilles</a>. with Help from <a href="//jekyllrb.com/" title="Transform your plain text into static websites and blogs.">Jekyll</a> and <a href="//getbootstrap.com/" title="Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.">Bootstrap</a></p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 
@@ -233,12 +319,26 @@
       $("#code").qrcode({
         width: 150,
         height: 150,
-        text: "http://achillesz.github.io/index.html"
+        text: "http://achillesz.github.io/"
       });
     </script>
 
     
 
+    
+    <!-- duoshuo Begin -->
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"febbc"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    <!-- duoshuo End -->
     
   </body>
 </html>

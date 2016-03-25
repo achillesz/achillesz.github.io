@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>jquery-event - febbc</title>
+  <title>jQuery-Event - febbc</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="achilles">
@@ -79,146 +79,40 @@
         </div>
         <div class="row clearfix">
           <div class="col-md-12">
-  <h2 class="title"> jquery-event <time class="small">2015.08.27</time></h2>
+  <h2 class="title"> jQuery-Event <time class="small">2015.08.27</time></h2>
   <div id="code" class="qrcode visible-lg"></div>
-  <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+  <h1>标题1</h1>
 
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2>标题2</h2>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>我是段落</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">我是引用
+</code></pre></div>
+<blockquote>
+<p>我是引用2</p>
+</blockquote>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="nx">add</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">elem</span><span class="p">,</span> <span class="nx">types</span><span class="p">,</span> <span class="nx">handler</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">selector</span> <span class="p">)</span> <span class="p">{</span>
+<p>内引用 <code>的的</code></p>
 
-        <span class="kd">var</span> <span class="nx">elemData</span><span class="p">,</span> <span class="nx">eventHandle</span><span class="p">,</span> <span class="nx">events</span><span class="p">,</span>
-            <span class="nx">t</span><span class="p">,</span> <span class="nx">tns</span><span class="p">,</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">namespaces</span><span class="p">,</span> <span class="nx">handleObj</span><span class="p">,</span>
-            <span class="nx">handleObjIn</span><span class="p">,</span> <span class="nx">handlers</span><span class="p">,</span> <span class="nx">special</span><span class="p">;</span>
+<!-- more -->
 
-        <span class="c1">// Don&#39;t attach events to noData or text/comment nodes (allow plain objects tho)</span>
-        <span class="c1">// nodeType=3是文本节点，nodeType=8为注释节点</span>
-        <span class="k">if</span> <span class="p">(</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">===</span> <span class="mi">3</span> <span class="o">||</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">===</span> <span class="mi">8</span> <span class="o">||</span> <span class="o">!</span><span class="nx">types</span> <span class="o">||</span> <span class="o">!</span><span class="nx">handler</span> <span class="o">||</span> <span class="o">!</span><span class="p">(</span><span class="nx">elemData</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">_data</span><span class="p">(</span> <span class="nx">elem</span> <span class="p">))</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="k">return</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// Caller can pass in an object of custom data in lieu of the handler</span>
-        <span class="c1">// </span>
-        <span class="k">if</span> <span class="p">(</span> <span class="nx">handler</span><span class="p">.</span><span class="nx">handler</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="nx">handleObjIn</span> <span class="o">=</span> <span class="nx">handler</span><span class="p">;</span>
-            <span class="nx">handler</span> <span class="o">=</span> <span class="nx">handleObjIn</span><span class="p">.</span><span class="nx">handler</span><span class="p">;</span>
-            <span class="nx">selector</span> <span class="o">=</span> <span class="nx">handleObjIn</span><span class="p">.</span><span class="nx">selector</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// Make sure that the handler has a unique ID, used to find/remove it later</span>
-        <span class="c1">// 为handler分配一个全局唯一的Id,用于查找和删除</span>
-        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">guid</span><span class="o">++</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// Init the element&#39;s event structure and main handler, if this is the first</span>
-        <span class="c1">// 初始化元素的events。如果没有取到events中值，就初始化data: {}　</span>
-        <span class="nx">events</span> <span class="o">=</span> <span class="nx">elemData</span><span class="p">.</span><span class="nx">events</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">events</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="nx">elemData</span><span class="p">.</span><span class="nx">events</span> <span class="o">=</span> <span class="nx">events</span> <span class="o">=</span> <span class="p">{};</span>
-        <span class="p">}</span>
-        <span class="c1">// 获取元素数据对象中事件的处理器</span>
-        <span class="nx">eventHandle</span> <span class="o">=</span> <span class="nx">elemData</span><span class="p">.</span><span class="nx">handle</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">eventHandle</span> <span class="p">)</span> <span class="p">{</span>
-            <span class="nx">elemData</span><span class="p">.</span><span class="nx">handle</span> <span class="o">=</span> <span class="nx">eventHandle</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">e</span> <span class="p">)</span> <span class="p">{</span>
-                <span class="c1">// Discard the second event of a jQuery.event.trigger() and</span>
-                <span class="c1">// when an event is called after a page has unloaded</span>
-                <span class="c1">// ？待细致研究</span>
-                <span class="k">return</span> <span class="k">typeof</span> <span class="nx">jQuery</span> <span class="o">!==</span> <span class="s2">&quot;undefined&quot;</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">!</span><span class="nx">e</span> <span class="o">||</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">triggered</span> <span class="o">!==</span> <span class="nx">e</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span> <span class="o">?</span>
-                    <span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">dispatch</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span> <span class="nx">eventHandle</span><span class="p">.</span><span class="nx">elem</span><span class="p">,</span> <span class="nx">arguments</span> <span class="p">)</span> <span class="o">:</span>
-                    <span class="kc">undefined</span><span class="p">;</span>
-            <span class="p">};</span>
-            <span class="c1">// Add elem as a property of the handle fn to prevent a memory leak with IE non-native events</span>
-            <span class="c1">// 增加elem做为handle属性，防止IE由于没有本地Event而内存泄露。 为什么呢？</span>
-            <span class="nx">eventHandle</span><span class="p">.</span><span class="nx">elem</span> <span class="o">=</span> <span class="nx">elem</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// Handle multiple events separated by a space</span>
-        <span class="c1">// jQuery(...).bind(&quot;mouseover mouseout&quot;, fn);</span>
-        <span class="nx">types</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">trim</span><span class="p">(</span> <span class="nx">hoverHack</span><span class="p">(</span><span class="nx">types</span><span class="p">)</span> <span class="p">).</span><span class="nx">split</span><span class="p">(</span> <span class="s2">&quot; &quot;</span> <span class="p">);</span>
-        <span class="k">for</span> <span class="p">(</span> <span class="nx">t</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">t</span> <span class="o">&lt;</span> <span class="nx">types</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">t</span><span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
-
-            <span class="nx">tns</span> <span class="o">=</span> <span class="nx">rtypenamespace</span><span class="p">.</span><span class="nx">exec</span><span class="p">(</span> <span class="nx">types</span><span class="p">[</span><span class="nx">t</span><span class="p">]</span> <span class="p">)</span> <span class="o">||</span> <span class="p">[];</span>
-            <span class="nx">type</span> <span class="o">=</span> <span class="nx">tns</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-            <span class="nx">namespaces</span> <span class="o">=</span> <span class="p">(</span> <span class="nx">tns</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">||</span> <span class="s2">&quot;&quot;</span> <span class="p">).</span><span class="nx">split</span><span class="p">(</span> <span class="s2">&quot;.&quot;</span> <span class="p">).</span><span class="nx">sort</span><span class="p">();</span>
-
-            <span class="c1">// If event changes its type, use the special event handlers for the changed type</span>
-            <span class="nx">special</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">special</span><span class="p">[</span> <span class="nx">type</span> <span class="p">]</span> <span class="o">||</span> <span class="p">{};</span>
-
-            <span class="c1">// If selector defined, determine special event api type, otherwise given type</span>
-            <span class="nx">type</span> <span class="o">=</span> <span class="p">(</span> <span class="nx">selector</span> <span class="o">?</span> <span class="nx">special</span><span class="p">.</span><span class="nx">delegateType</span> <span class="o">:</span> <span class="nx">special</span><span class="p">.</span><span class="nx">bindType</span> <span class="p">)</span> <span class="o">||</span> <span class="nx">type</span><span class="p">;</span>
-
-            <span class="c1">// Update special based on newly reset type</span>
-            <span class="nx">special</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">special</span><span class="p">[</span> <span class="nx">type</span> <span class="p">]</span> <span class="o">||</span> <span class="p">{};</span>
-
-            <span class="c1">// handleObj is passed to all event handlers</span>
-            <span class="nx">handleObj</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-                <span class="nx">type</span><span class="o">:</span> <span class="nx">type</span><span class="p">,</span>
-                <span class="nx">origType</span><span class="o">:</span> <span class="nx">tns</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
-                <span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">,</span>
-                <span class="nx">handler</span><span class="o">:</span> <span class="nx">handler</span><span class="p">,</span>
-                <span class="nx">guid</span><span class="o">:</span> <span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span><span class="p">,</span>
-                <span class="nx">selector</span><span class="o">:</span> <span class="nx">selector</span><span class="p">,</span>
-                <span class="nx">needsContext</span><span class="o">:</span> <span class="nx">selector</span> <span class="o">&amp;&amp;</span> <span class="nx">jQuery</span><span class="p">.</span><span class="nx">expr</span><span class="p">.</span><span class="nx">match</span><span class="p">.</span><span class="nx">needsContext</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span> <span class="nx">selector</span> <span class="p">),</span>
-                <span class="nx">namespace</span><span class="o">:</span> <span class="nx">namespaces</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
-            <span class="p">},</span> <span class="nx">handleObjIn</span> <span class="p">);</span>
-
-            <span class="c1">// Init the event handler queue if we&#39;re the first</span>
-            <span class="nx">handlers</span> <span class="o">=</span> <span class="nx">events</span><span class="p">[</span> <span class="nx">type</span> <span class="p">];</span>
-            <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">handlers</span> <span class="p">)</span> <span class="p">{</span>
-                <span class="nx">handlers</span> <span class="o">=</span> <span class="nx">events</span><span class="p">[</span> <span class="nx">type</span> <span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
-                <span class="nx">handlers</span><span class="p">.</span><span class="nx">delegateCount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-                <span class="c1">// Only use addEventListener/attachEvent if the special events handler returns false</span>
-                <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">special</span><span class="p">.</span><span class="nx">setup</span> <span class="o">||</span> <span class="nx">special</span><span class="p">.</span><span class="nx">setup</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">elem</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">namespaces</span><span class="p">,</span> <span class="nx">eventHandle</span> <span class="p">)</span> <span class="o">===</span> <span class="kc">false</span> <span class="p">)</span> <span class="p">{</span>
-                    <span class="c1">// Bind the global event handler to the element</span>
-                    <span class="k">if</span> <span class="p">(</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span> <span class="p">)</span> <span class="p">{</span>
-                        <span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">eventHandle</span><span class="p">,</span> <span class="kc">false</span> <span class="p">);</span>
-
-                    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">attachEvent</span> <span class="p">)</span> <span class="p">{</span>
-                        <span class="nx">elem</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span> <span class="s2">&quot;on&quot;</span> <span class="o">+</span> <span class="nx">type</span><span class="p">,</span> <span class="nx">eventHandle</span> <span class="p">);</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-
-            <span class="k">if</span> <span class="p">(</span> <span class="nx">special</span><span class="p">.</span><span class="nx">add</span> <span class="p">)</span> <span class="p">{</span>
-                <span class="nx">special</span><span class="p">.</span><span class="nx">add</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span> <span class="nx">elem</span><span class="p">,</span> <span class="nx">handleObj</span> <span class="p">);</span>
-
-                <span class="k">if</span> <span class="p">(</span> <span class="o">!</span><span class="nx">handleObj</span><span class="p">.</span><span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span> <span class="p">)</span> <span class="p">{</span>
-                    <span class="nx">handleObj</span><span class="p">.</span><span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span> <span class="o">=</span> <span class="nx">handler</span><span class="p">.</span><span class="nx">guid</span><span class="p">;</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-
-            <span class="c1">// Add to the element&#39;s handler list, delegates in front</span>
-            <span class="k">if</span> <span class="p">(</span> <span class="nx">selector</span> <span class="p">)</span> <span class="p">{</span>
-                <span class="nx">handlers</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span> <span class="nx">handlers</span><span class="p">.</span><span class="nx">delegateCount</span><span class="o">++</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">handleObj</span> <span class="p">);</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="nx">handlers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="nx">handleObj</span> <span class="p">);</span>
-            <span class="p">}</span>
-
-            <span class="c1">// Keep track of which events have ever been used, for event optimization</span>
-            <span class="nx">jQuery</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">global</span><span class="p">[</span> <span class="nx">type</span> <span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// Nullify elem to prevent memory leaks in IE</span>
-        <span class="nx">elem</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="p">};</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="kd">function</span> <span class="nx">helloWorld</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>  
+    <span class="p">}</span></code></pre></figure>
 
   <ul class="pager">
     
     <li class="previous"><a  href="/javascript/2015-08/grade.html" title="javascript优先级">&larr; Prev</a></li>
     
     
-    <li class="next disabled"><a href="#">Next &rarr;</a></li>
+    <li class="next"><a href="/javascript/jquery/2015-09/type.html" title="jQuery type">Next &rarr;</a></li>
     
   </ul>
 
+
+<div id="comments">
+  <div class="ds-thread" data-thread-key="/javascript/jquery/2015-08/jquery-event"  data-title="jQuery-Event - febbc" data-url="//achillesz.github.io/javascript/jquery/2015-08/jquery-event.html"></div>
+</div>
 
 
 </div>
@@ -227,7 +121,7 @@
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2015 <a href="//achillesz.github.io" title="">achilles</a>. with Help from <a href="//jekyllrb.com/" title="Transform your plain text into static websites and blogs.">Jekyll</a> and <a href="//getbootstrap.com/" title="Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.">Bootstrap</a></p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 
@@ -248,6 +142,20 @@
 
     
 
+    
+    <!-- duoshuo Begin -->
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"febbc"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] ||
+        document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script>
+    <!-- duoshuo End -->
     
   </body>
 </html>
