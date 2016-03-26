@@ -115,85 +115,199 @@
 </style>
 <div class="col-md-9">
   
-  <h3 class="title"><a href="/2015-12-29-vim-move/">linux 移动操作</a></h3>
+  <h3 class="title"><a href="/jquery/2015/09/25/istypes.html">类型判断</a></h3>
   
-  <div  class="bbb"> 半屏
-control+U :文本向上滚半屏
-control+D :文本向下滚半屏
+  <div  class="bbb"> 静态方法type
 
-一行
-control+E :文本向下滚动一行
-control+Y :文本向上滚动一行
+空对象toString的函数会返回一个
 
-翻页
-control+F :文本向下滚动一屏,实际上是整屏减去2行。
-control+b :文本向上滚动一屏，同上。
 
-位置
-
-zz 把当前行置为屏幕的中央
-
-zt 把当前行置于屏幕的顶端
-
-zb 把当前行置于屏幕的底端
-... </div>
+  
+    
+      obj
+      result1
+    
   
   
-  <h3 class="title"><a href="/2015-12-28-deferred/">chrome 您的链接不是私密链接</a></h3>
+    
+      字符窜
+      [object String]
+    
+    
+      函数
+      [object Function]
+    
   
-  <div  class="bbb"> 1.打开chrome://flags
-2.找到“允许来自https来源的不安全WebSocket”
-3.点启用，然后重启浏览器
+
+
+我们知道类型返回的结果，JQ 把它作为KEY，值简化成一个直观的... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/09/25/trim.html">trim的实现</a></h3>
+  
+  <div  class="bbb"> 下面应该是不做兼容处理的。
+
+
+	trim: function(text) {
+		return text == null ? "" : core_trim.call(text);
+	}
+
+
+
+
+而下面的代码是早期的：
+
+	// Used for trimming whitespace
+	trimLeft = /^\s+/,
+	trimRight = /\s+$/,
+
+	trim = Str... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/09/24/proxy.html">proxy的使用</a></h3>
+  
+  <div  class="bbb"> 假设有一个函数要被调用，this应该指向正确的context(上下文)，但在某些环境下this另有它指，破坏了我们期望的this。这种场景有几种：
+
+
+  事件函数中，被指向dom元素
+  each函数中，被指向为dom元素
+  定时器函数中，被指向window
+
+
+以上几个场景会破坏掉面向对象的this,我们的目标是这个函数被执行时this指向正确的上下文。
+而实际上，是包装了一层函数，这... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/09/23/noconflict1.html">noConflict函数干的事</a></h3>
+  
+  <div  class="bbb"> 在拉入我们的库运行的时候，我们会暴露两个变量来使用我们的库，但也许我们之前，别人已经叫过这个名字了。那怎么办？
+
+我们先保存别人的这个变量，我们通过一个方法，来还原别人的变量，而自己的，保存到用户自定义的变量里。
+
+
+	noConflict: function(deep) {
+		if (window.$ === jQuery) {
+			window.$ = _$;
+		}
+
+		if (... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/09/18/blur.html">jQuery blur事件绑定不上</a></h3>
+  
+	<div class="aaa">  <p>在一个ifram里面弹出到父级窗口的dialog窗口中,做手机，邮箱的校验。但是发现无效。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+	<span class="kd">var</span> <span class="nx">jv</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">form</span><span class="p">.</span><span class="nx">jvalidator</span><span class="p">();</span>
+	<span class="nx">jv</span><span class="p">.</span><span class="nx">when</span><span class="p">([</span><span class="s1">'blur'</span><span class="p">]);</span>
+	<span class="nx">jv</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">$el</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">$element</span><span class="p">;</span>
+		<span class="nx">$el</span><span class="p">.</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'red_border'</span><span class="p">);</span>
+	<span class="p">});</span>
+
+	<span class="nx">jv</span><span class="p">.</span><span class="nx">fail</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">$el</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">$element</span><span class="p">;</span>
+		<span class="nx">$el</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'red_border'</span><span class="p">);</span>
+	<span class="p">});</span>
+	
+</code></pre>
+</div>
+
+<p>经过一顿排查发现某个地方的代码，如下：</p>
 
  </div>
   
   
-  <h3 class="title"><a href="/2015-11-05-define/">define</a></h3>
+  <h3 class="title"><a href="/2015/09/11/inherit.html">js继承解释</a></h3>
   
-  <div  class="bbb"> apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
-显然用到了 apply, 也用到了 Manager
+	<div class="aaa">  <ol>
+  <li>
+    <p>Son 类实例化一个对象，new 应该需要做几件事，创造一个空对象，执行类函数，类函数的this指向空对象，无返回值，默认返回该对象。</p>
+  </li>
+  <li>
+    <p>生成的实例对象有个constructor，指向类（构造它的）。</p>
+  </li>
+  <li>
+    <p>生成的实例对象应该有个_proto_指向类的原型对象的_proto_</p>
+  </li>
+  <li>
+    <p>每一个函数都应该有一个原型对象，属性constructor,应该指向类自身。类创建的对象的constructor应该与这里的constructor保持一致。</p>
+  </li>
+</ol>
 
-	Ext.apply(Ext,{
-	define: functionL() {}
-	})
-
-
-
-	define: function (className, data, createdFn) {
-		if (data.ove... </div>
-  
-  
-  <h3 class="title"><a href="/2015-10-28-CallBacks/">Callbacks模块解析</a></h3>
-  
-  <div  class="bbb"> 某个时候调用某个函数，这个函数被称作回调函数。
-
-某个时候，要干某些事情，某些事情分别由不同的函数来完成，并且应该有先后顺序。
-
-回调列表就是用来解决这个问题的。
-
-
-  add的函数，被放在LIST列表，调用的时候遍历，按照添加的先后顺序依次调用各函数，注意某个时候，参数是相同的，执行所有的函数一遍
-  如果add的时候，调用已经结束，且是 memory 的情况下，那么直接执行。 否则不执... </div>
+ </div>
   
   
-  <h3 class="title"><a href="/2015-10-01-eq/">eq pushStack merge</a></h3>
+  <h3 class="title"><a href="/2015/09/11/usage.html">Component关系功能说明</a></h3>
   
-  <div  class="bbb"> 
-  传入正数
-  传入负数
+	<div class="aaa">  <h1 id="section">继承关系说明</h1>
 
+<div class="highlighter-rouge"><pre class="highlight"><code>$.ui.Component --&gt; $.event.EventTarget --&gt; $.Disposable
 
-最终得到类数组的某一项，然后放入数组
+$.ui.Dialog --&gt; $.ui.Component
 
-	eq: function(i) {
-		var len = this.length,
-			j = +i + (i &lt; 0 ? len : 0);
-		return this.pushStack(j &gt;= 0 &amp;&amp; j &lt; len ? [this[j]] : []);
-	},
+	$.ui.Prompt --&gt; $.ui.Dialog
+	$.ui.PromptDialog --&gt; $.ui.Dialog
+</code></pre>
+</div>
 
+ </div>
+  
+  
+  <h3 class="title"><a href="/javascript/2015/09/10/call-apply.html">Function.call Function.apply</a></h3>
+  
+	<div class="aaa">  <p>##内部实现</p>
 
+<h4 id="apply">apply</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+@param {Object} [thisArg]
+@param {Array} [argArray]
+@return {*}
+*/</span>
+<span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">apply</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">thisArg</span><span class="p">,</span><span class="nx">argArray</span><span class="p">)</span> <span class="p">{};</span>
+</code></pre>
+</div>
+<p>#### call</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+@param {Object} [thisArg]
+@param {...*} [args]
+@return {*}
+*/</span>
+<span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">call</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">thisArg</span><span class="p">,</span><span class="nx">args</span><span class="p">)</span> <span class="p">{};</span>
+<span class="nb">Function</span> <span class="o">=</span> <span class="p">{};</span>
+</code></pre>
+</div>
+ </div>
+  
+  
+  <h3 class="title"><a href="/linux/2015/09/07/vim-cp.html">linux 下复制粘帖</a></h3>
+  
+  <div  class="bbb"> 系统下
+
+  在KDE/Gnome下：
+复制命令：Ctrl + C
+粘贴命令：Ctrl + V
+  在终端下：
+复制命令：Ctrl + Shift + C 组合键.
+粘贴命令：Ctrl + Shift + V 组合键.
+  在控制台下：
+复制命令：Ctrl + Insert 组合键　　或　　用鼠标选中即是复制。
+粘贴命令：Shift + Insert 组合键　 或　　单击鼠标滚轮即为粘贴
 
 ... </div>
+  
+  
+  <h3 class="title"><a href="/javascript/jquery/2015/09/07/type.html">jQuery type</a></h3>
+  
+	<div class="aaa">  <p>type    你好</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>type of obj
+</code></pre>
+</div>
+
+ </div>
   
   
 
@@ -205,10 +319,10 @@ zb 把当前行置于屏幕的底端
     <a class="btn btn-primary btn-sm" href="/">&laquo; Prev</a>
     
     
-    <span><a class="btn btn-primary btn-sm disabled">Page: 2 of 6</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">Page: 2 of 3</a></span>
     
     <a class="btn btn-primary btn-sm" href="/page3/">Next &raquo;</a>
-    <a class="btn btn-primary btn-sm" href="/page6/">Last</a>
+    <a class="btn btn-primary btn-sm" href="/page3/">Last</a>
     
   </div>
 </div>
@@ -263,25 +377,25 @@ zb 把当前行置于屏幕的底端
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/2016-03-24-edit-vim/" title="linux edit">linux edit</a></li>
+    <li><a href="/linux/2016/03/24/edit-vim.html" title="linux edit">linux edit</a></li>
     
-    <li><a href="/2016-01-29-quote/" title="html引号转义问题">html引号转义问题</a></li>
+    <li><a href="/js/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/2016-01-26-component/" title="Component介绍">Component介绍</a></li>
+    <li><a href="/js/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
     
-    <li><a href="/2016-01-12-delete-branch/" title="git 删除远程分支">git 删除远程分支</a></li>
+    <li><a href="/git/2016/01/12/delete-branch.html" title="git 删除远程分支">git 删除远程分支</a></li>
     
-    <li><a href="/2016-01-11-create-branch/" title="git 创建分支命令">git 创建分支命令</a></li>
+    <li><a href="/git/2016/01/11/create-branch.html" title="git 创建分支命令">git 创建分支命令</a></li>
     
-    <li><a href="/2015-12-29-vim-move/" title="linux 移动操作">linux 移动操作</a></li>
+    <li><a href="/linux/2015/12/29/vim-move.html" title="linux 移动操作">linux 移动操作</a></li>
     
-    <li><a href="/2015-12-28-deferred/" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
+    <li><a href="/chrome/2015/12/28/deferred.html" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
     
-    <li><a href="/2015-11-05-define/" title="define">define</a></li>
+    <li><a href="/ext/2015/11/05/define.html" title="define">define</a></li>
     
-    <li><a href="/2015-10-28-CallBacks/" title="Callbacks模块解析">Callbacks模块解析</a></li>
+    <li><a href="/jquery/2015/10/28/CallBacks.html" title="Callbacks模块解析">Callbacks模块解析</a></li>
     
-    <li><a href="/2015-10-01-eq/" title="eq pushStack merge">eq pushStack merge</a></li>
+    <li><a href="/jquery/2015/10/01/eq.html" title="eq pushStack merge">eq pushStack merge</a></li>
     
   </ul>
 </section>

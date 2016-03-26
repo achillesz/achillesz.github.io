@@ -115,7 +115,7 @@
 </style>
 <div class="col-md-9">
   
-  <h3 class="title"><a href="/2016-03-24-edit-vim/">linux edit</a></h3>
+  <h3 class="title"><a href="/linux/2016/03/24/edit-vim.html">linux edit</a></h3>
   
   <div  class="bbb"> edit 编辑已经存在的文件
 
@@ -125,7 +125,7 @@ edit % 展开当前文件路径
  </div>
   
   
-  <h3 class="title"><a href="/2016-01-29-quote/">html引号转义问题</a></h3>
+  <h3 class="title"><a href="/js/2016/01/29/quote.html">html引号转义问题</a></h3>
   
   <div  class="bbb"> 描述：
 
@@ -136,7 +136,7 @@ edit % 展开当前文件路径
 双引号的时候也不会有问题，但是有海外的产品录入，都成了英文了，会有单引号的问题。这个无法解决。也无法克服。对于JS的反斜杠转义在这里没... </div>
   
   
-  <h3 class="title"><a href="/2016-01-26-component/">Component介绍</a></h3>
+  <h3 class="title"><a href="/js/2016/01/26/component.html">Component介绍</a></h3>
   
   <div  class="bbb"> 类说明
 
@@ -158,7 +158,7 @@ createElement
 当前文档下创建DOM元素,这么看涉及到 cre... </div>
   
   
-  <h3 class="title"><a href="/2016-01-12-delete-branch/">git 删除远程分支</a></h3>
+  <h3 class="title"><a href="/git/2016/01/12/delete-branch.html">git 删除远程分支</a></h3>
   
   <div  class="bbb"> 	git push origin :needDelBranchName
 
@@ -175,7 +175,7 @@ git push [远程名] [本地分支]:[远程分支]
 如果省略 [本地分支]，那就等... </div>
   
   
-  <h3 class="title"><a href="/2016-01-11-create-branch/">git 创建分支命令</a></h3>
+  <h3 class="title"><a href="/git/2016/01/11/create-branch.html">git 创建分支命令</a></h3>
   
   <div  class="bbb"> 
   先切换到主分支（一般从master新建分支）
@@ -190,6 +190,87 @@ git push [远程名] [本地分支]:[远程分支]
 	git branch --set-upstream-to=origin/0111-marketing branchName... </div>
   
   
+  <h3 class="title"><a href="/linux/2015/12/29/vim-move.html">linux 移动操作</a></h3>
+  
+  <div  class="bbb"> 半屏
+control+U :文本向上滚半屏
+control+D :文本向下滚半屏
+
+一行
+control+E :文本向下滚动一行
+control+Y :文本向上滚动一行
+
+翻页
+control+F :文本向下滚动一屏,实际上是整屏减去2行。
+control+b :文本向上滚动一屏，同上。
+
+位置
+
+zz 把当前行置为屏幕的中央
+
+zt 把当前行置于屏幕的顶端
+
+zb 把当前行置于屏幕的底端
+... </div>
+  
+  
+  <h3 class="title"><a href="/chrome/2015/12/28/deferred.html">chrome 您的链接不是私密链接</a></h3>
+  
+  <div  class="bbb"> 1.打开chrome://flags
+2.找到“允许来自https来源的不安全WebSocket”
+3.点启用，然后重启浏览器
+
+ </div>
+  
+  
+  <h3 class="title"><a href="/ext/2015/11/05/define.html">define</a></h3>
+  
+  <div  class="bbb"> apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
+显然用到了 apply, 也用到了 Manager
+
+	Ext.apply(Ext,{
+	define: functionL() {}
+	})
+
+
+
+	define: function (className, data, createdFn) {
+		if (data.ove... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/10/28/CallBacks.html">Callbacks模块解析</a></h3>
+  
+  <div  class="bbb"> 某个时候调用某个函数，这个函数被称作回调函数。
+
+某个时候，要干某些事情，某些事情分别由不同的函数来完成，并且应该有先后顺序。
+
+回调列表就是用来解决这个问题的。
+
+
+  add的函数，被放在LIST列表，调用的时候遍历，按照添加的先后顺序依次调用各函数，注意某个时候，参数是相同的，执行所有的函数一遍
+  如果add的时候，调用已经结束，且是 memory 的情况下，那么直接执行。 否则不执... </div>
+  
+  
+  <h3 class="title"><a href="/jquery/2015/10/01/eq.html">eq pushStack merge</a></h3>
+  
+  <div  class="bbb"> 
+  传入正数
+  传入负数
+
+
+最终得到类数组的某一项，然后放入数组
+
+	eq: function(i) {
+		var len = this.length,
+			j = +i + (i &lt; 0 ? len : 0);
+		return this.pushStack(j &gt;= 0 &amp;&amp; j &lt; len ? [this[j]] : []);
+	},
+
+
+
+... </div>
+  
+  
 
   <!-- Pagination links -->
   <div class="pull-right">
@@ -197,10 +278,10 @@ git push [远程名] [本地分支]:[远程分支]
     <span><a class="btn btn-primary btn-sm disabled" href="/">Home</a></span>
     <span><a class="btn btn-primary btn-sm disabled">&laquo; Prev</a></span>
     
-    <span><a class="btn btn-primary btn-sm disabled">Page: 1 of 6</a></span>
+    <span><a class="btn btn-primary btn-sm disabled">Page: 1 of 3</a></span>
     
     <a class="btn btn-primary btn-sm" href="/page2/">Next &raquo;</a>
-    <a class="btn btn-primary btn-sm" href="/page6/">Last</a>
+    <a class="btn btn-primary btn-sm" href="/page3/">Last</a>
     
   </div>
 </div>
@@ -255,25 +336,25 @@ git push [远程名] [本地分支]:[远程分支]
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/2016-03-24-edit-vim/" title="linux edit">linux edit</a></li>
+    <li><a href="/linux/2016/03/24/edit-vim.html" title="linux edit">linux edit</a></li>
     
-    <li><a href="/2016-01-29-quote/" title="html引号转义问题">html引号转义问题</a></li>
+    <li><a href="/js/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/2016-01-26-component/" title="Component介绍">Component介绍</a></li>
+    <li><a href="/js/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
     
-    <li><a href="/2016-01-12-delete-branch/" title="git 删除远程分支">git 删除远程分支</a></li>
+    <li><a href="/git/2016/01/12/delete-branch.html" title="git 删除远程分支">git 删除远程分支</a></li>
     
-    <li><a href="/2016-01-11-create-branch/" title="git 创建分支命令">git 创建分支命令</a></li>
+    <li><a href="/git/2016/01/11/create-branch.html" title="git 创建分支命令">git 创建分支命令</a></li>
     
-    <li><a href="/2015-12-29-vim-move/" title="linux 移动操作">linux 移动操作</a></li>
+    <li><a href="/linux/2015/12/29/vim-move.html" title="linux 移动操作">linux 移动操作</a></li>
     
-    <li><a href="/2015-12-28-deferred/" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
+    <li><a href="/chrome/2015/12/28/deferred.html" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
     
-    <li><a href="/2015-11-05-define/" title="define">define</a></li>
+    <li><a href="/ext/2015/11/05/define.html" title="define">define</a></li>
     
-    <li><a href="/2015-10-28-CallBacks/" title="Callbacks模块解析">Callbacks模块解析</a></li>
+    <li><a href="/jquery/2015/10/28/CallBacks.html" title="Callbacks模块解析">Callbacks模块解析</a></li>
     
-    <li><a href="/2015-10-01-eq/" title="eq pushStack merge">eq pushStack merge</a></li>
+    <li><a href="/jquery/2015/10/01/eq.html" title="eq pushStack merge">eq pushStack merge</a></li>
     
   </ul>
 </section>

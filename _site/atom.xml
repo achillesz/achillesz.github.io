@@ -4,7 +4,7 @@
   <title>febbc</title>
   <link href="//achillesz.github.io//atom.xml" rel="self"/>
   <link href="//achillesz.github.io"/>
-  <updated>2016-03-25T11:43:47+08:00</updated>
+  <updated>2016-03-26T08:38:31+08:00</updated>
   <id>//achillesz.github.io</id>
   <author>
     <name>achilles</name>
@@ -13,9 +13,9 @@
   
   <entry>
     <title>linux edit</title>
-    <link href="//achillesz.github.io/2016-03-24-edit-vim/"/>
+    <link href="//achillesz.github.io/linux/2016/03/24/edit-vim.html"/>
     <updated>2016-03-24T16:51:36+08:00</updated>
-    <id>//achillesz.github.io/edit-vim</id>
+    <id>//achillesz.github.io/linux/2016/03/24/edit-vim</id>
     <content type="html">edit 编辑已经存在的文件
 
 edit 编辑相对目录文件
@@ -26,9 +26,9 @@ edit % 展开当前文件路径
   
   <entry>
     <title>html引号转义问题</title>
-    <link href="//achillesz.github.io/2016-01-29-quote/"/>
+    <link href="//achillesz.github.io/js/2016/01/29/quote.html"/>
     <updated>2016-01-29T19:41:11+08:00</updated>
-    <id>//achillesz.github.io/quote</id>
+    <id>//achillesz.github.io/js/2016/01/29/quote</id>
     <content type="html">描述：
 
 
@@ -43,9 +43,9 @@ edit % 展开当前文件路径
   
   <entry>
     <title>Component介绍</title>
-    <link href="//achillesz.github.io/2016-01-26-component/"/>
+    <link href="//achillesz.github.io/js/2016/01/26/component.html"/>
     <updated>2016-01-26T19:41:11+08:00</updated>
-    <id>//achillesz.github.io/component</id>
+    <id>//achillesz.github.io/js/2016/01/26/component</id>
     <content type="html">类说明
 
 	$.ui.Component = function(opt_doc) {
@@ -72,9 +72,9 @@ createDom
   
   <entry>
     <title>git 删除远程分支</title>
-    <link href="//achillesz.github.io/2016-01-12-delete-branch/"/>
+    <link href="//achillesz.github.io/git/2016/01/12/delete-branch.html"/>
     <updated>2016-01-12T03:16:11+08:00</updated>
-    <id>//achillesz.github.io/delete-branch</id>
+    <id>//achillesz.github.io/git/2016/01/12/delete-branch</id>
     <content type="html">	git push origin :needDelBranchName
 
 
@@ -98,9 +98,9 @@ git push [远程名] [本地分支]:[远程分支]
   
   <entry>
     <title>git 创建分支命令</title>
-    <link href="//achillesz.github.io/2016-01-11-create-branch/"/>
+    <link href="//achillesz.github.io/git/2016/01/11/create-branch.html"/>
     <updated>2016-01-11T23:12:11+08:00</updated>
-    <id>//achillesz.github.io/create-branch</id>
+    <id>//achillesz.github.io/git/2016/01/11/create-branch</id>
     <content type="html">
   先切换到主分支（一般从master新建分支）
   新建并切换到分支
@@ -125,9 +125,9 @@ git push [远程名] [本地分支]:[远程分支]
   
   <entry>
     <title>linux 移动操作</title>
-    <link href="//achillesz.github.io/2015-12-29-vim-move/"/>
+    <link href="//achillesz.github.io/linux/2015/12/29/vim-move.html"/>
     <updated>2015-12-29T04:51:36+08:00</updated>
-    <id>//achillesz.github.io/vim-move</id>
+    <id>//achillesz.github.io/linux/2015/12/29/vim-move</id>
     <content type="html">半屏
 control+U :文本向上滚半屏
 control+D :文本向下滚半屏
@@ -169,9 +169,9 @@ i“ 引号内部的内容
   
   <entry>
     <title>chrome 您的链接不是私密链接</title>
-    <link href="//achillesz.github.io/2015-12-28-deferred/"/>
+    <link href="//achillesz.github.io/chrome/2015/12/28/deferred.html"/>
     <updated>2015-12-28T18:51:36+08:00</updated>
-    <id>//achillesz.github.io/deferred</id>
+    <id>//achillesz.github.io/chrome/2015/12/28/deferred</id>
     <content type="html">1.打开chrome://flags
 2.找到“允许来自https来源的不安全WebSocket”
 3.点启用，然后重启浏览器
@@ -181,9 +181,9 @@ i“ 引号内部的内容
   
   <entry>
     <title>define</title>
-    <link href="//achillesz.github.io/2015-11-05-define/"/>
+    <link href="//achillesz.github.io/ext/2015/11/05/define.html"/>
     <updated>2015-11-05T02:11:36+08:00</updated>
-    <id>//achillesz.github.io/define</id>
+    <id>//achillesz.github.io/ext/2015/11/05/define</id>
     <content type="html">apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
 显然用到了 apply, 也用到了 Manager
 
@@ -203,9 +203,9 @@ i“ 引号内部的内容
   
   <entry>
     <title>Callbacks模块解析</title>
-    <link href="//achillesz.github.io/2015-10-28-CallBacks/"/>
+    <link href="//achillesz.github.io/jquery/2015/10/28/CallBacks.html"/>
     <updated>2015-10-28T02:11:36+08:00</updated>
-    <id>//achillesz.github.io/CallBacks</id>
+    <id>//achillesz.github.io/jquery/2015/10/28/CallBacks</id>
     <content type="html">某个时候调用某个函数，这个函数被称作回调函数。
 
 某个时候，要干某些事情，某些事情分别由不同的函数来完成，并且应该有先后顺序。
@@ -221,9 +221,9 @@ i“ 引号内部的内容
   
   <entry>
     <title>eq pushStack merge</title>
-    <link href="//achillesz.github.io/2015-10-01-eq/"/>
+    <link href="//achillesz.github.io/jquery/2015/10/01/eq.html"/>
     <updated>2015-10-01T02:31:36+08:00</updated>
-    <id>//achillesz.github.io/eq</id>
+    <id>//achillesz.github.io/jquery/2015/10/01/eq</id>
     <content type="html">
   传入正数
   传入负数
@@ -248,9 +248,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>类型判断</title>
-    <link href="//achillesz.github.io/2015-09-25-istypes/"/>
+    <link href="//achillesz.github.io/jquery/2015/09/25/istypes.html"/>
     <updated>2015-09-25T18:53:36+08:00</updated>
-    <id>//achillesz.github.io/istypes</id>
+    <id>//achillesz.github.io/jquery/2015/09/25/istypes</id>
     <content type="html">静态方法type
 
 空对象toString的函数会返回一个
@@ -281,9 +281,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>trim的实现</title>
-    <link href="//achillesz.github.io/2015-09-25-trim/"/>
+    <link href="//achillesz.github.io/jquery/2015/09/25/trim.html"/>
     <updated>2015-09-25T04:54:36+08:00</updated>
-    <id>//achillesz.github.io/trim</id>
+    <id>//achillesz.github.io/jquery/2015/09/25/trim</id>
     <content type="html">下面应该是不做兼容处理的。
 
 
@@ -314,9 +314,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>proxy的使用</title>
-    <link href="//achillesz.github.io/2015-09-24-proxy/"/>
+    <link href="//achillesz.github.io/jquery/2015/09/24/proxy.html"/>
     <updated>2015-09-24T01:54:36+08:00</updated>
-    <id>//achillesz.github.io/proxy</id>
+    <id>//achillesz.github.io/jquery/2015/09/24/proxy</id>
     <content type="html">假设有一个函数要被调用，this应该指向正确的context(上下文)，但在某些环境下this另有它指，破坏了我们期望的this。这种场景有几种：
 
 
@@ -335,9 +335,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>noConflict函数干的事</title>
-    <link href="//achillesz.github.io/2015-09-23-noconflict1/"/>
+    <link href="//achillesz.github.io/jquery/2015/09/23/noconflict1.html"/>
     <updated>2015-09-23T23:37:36+08:00</updated>
-    <id>//achillesz.github.io/noconflict1</id>
+    <id>//achillesz.github.io/jquery/2015/09/23/noconflict1</id>
     <content type="html">在拉入我们的库运行的时候，我们会暴露两个变量来使用我们的库，但也许我们之前，别人已经叫过这个名字了。那怎么办？
 
 我们先保存别人的这个变量，我们通过一个方法，来还原别人的变量，而自己的，保存到用户自定义的变量里。
@@ -362,9 +362,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>jQuery blur事件绑定不上</title>
-    <link href="//achillesz.github.io/2015-09-18-blur/"/>
+    <link href="//achillesz.github.io/jquery/2015/09/18/blur.html"/>
     <updated>2015-09-18T19:38:36+08:00</updated>
-    <id>//achillesz.github.io/blur</id>
+    <id>//achillesz.github.io/jquery/2015/09/18/blur</id>
     <content type="html">在一个ifram里面弹出到父级窗口的dialog窗口中,做手机，邮箱的校验。但是发现无效。
 
 
@@ -388,9 +388,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>js继承解释</title>
-    <link href="//achillesz.github.io/2015-09-11-inherit/"/>
+    <link href="//achillesz.github.io/2015/09/11/inherit.html"/>
     <updated>2015-09-11T23:51:36+08:00</updated>
-    <id>//achillesz.github.io/inherit</id>
+    <id>//achillesz.github.io/2015/09/11/inherit</id>
     <content type="html">
   
     Son 类实例化一个对象，new 应该需要做几件事，创造一个空对象，执行类函数，类函数的this指向空对象，无返回值，默认返回该对象。
@@ -419,9 +419,9 @@ pushStack 用来返回新生成的对象，并且保存了 preObject 原来对�
   
   <entry>
     <title>Component关系功能说明</title>
-    <link href="//achillesz.github.io/2015-09-11-usage/"/>
+    <link href="//achillesz.github.io/2015/09/11/usage.html"/>
     <updated>2015-09-11T05:51:36+08:00</updated>
-    <id>//achillesz.github.io/usage</id>
+    <id>//achillesz.github.io/2015/09/11/usage</id>
     <content type="html">继承关系说明
 
 $.ui.Component --&amp;gt; $.event.EventTarget --&amp;gt; $.Disposable
@@ -443,9 +443,9 @@ $.ui.Placehold...</content>
   
   <entry>
     <title>Function.call Function.apply</title>
-    <link href="//achillesz.github.io/2015-09-10-call-apply/"/>
+    <link href="//achillesz.github.io/javascript/2015/09/10/call-apply.html"/>
     <updated>2015-09-10T00:00:00+08:00</updated>
-    <id>//achillesz.github.io/call-apply</id>
+    <id>//achillesz.github.io/javascript/2015/09/10/call-apply</id>
     <content type="html">##内部实现
 
 apply
@@ -475,9 +475,9 @@ Function = {};
   
   <entry>
     <title>linux 下复制粘帖</title>
-    <link href="//achillesz.github.io/2015-09-07-vim-cp/"/>
+    <link href="//achillesz.github.io/linux/2015/09/07/vim-cp.html"/>
     <updated>2015-09-07T04:51:36+08:00</updated>
-    <id>//achillesz.github.io/vim-cp</id>
+    <id>//achillesz.github.io/linux/2015/09/07/vim-cp</id>
     <content type="html">系统下
 
   在KDE/Gnome下：
@@ -505,9 +505,9 @@ buntu 和mint默认安装的vim是不支持系统剪切、粘贴版的，需要�
   
   <entry>
     <title>jQuery type</title>
-    <link href="//achillesz.github.io/2015-09-07-type/"/>
+    <link href="//achillesz.github.io/javascript/jquery/2015/09/07/type.html"/>
     <updated>2015-09-07T04:51:36+08:00</updated>
-    <id>//achillesz.github.io/type</id>
+    <id>//achillesz.github.io/javascript/jquery/2015/09/07/type</id>
     <content type="html">type    你好
 
 type of obj
@@ -544,9 +544,9 @@ type of obj
   
   <entry>
     <title>jQuery-Event</title>
-    <link href="//achillesz.github.io/2015-08-27-jquery-event/"/>
+    <link href="//achillesz.github.io/javascript/jquery/2015/08/27/jquery-event.html"/>
     <updated>2015-08-27T22:57:36+08:00</updated>
-    <id>//achillesz.github.io/jquery-event</id>
+    <id>//achillesz.github.io/javascript/jquery/2015/08/27/jquery-event</id>
     <content type="html">#标题1
 
 ##标题2
@@ -574,9 +574,9 @@ type of obj
   
   <entry>
     <title>javascript优先级</title>
-    <link href="//achillesz.github.io/2015-08-19-grade/"/>
+    <link href="//achillesz.github.io/javascript/2015/08/19/grade.html"/>
     <updated>2015-08-19T18:21:36+08:00</updated>
-    <id>//achillesz.github.io/grade</id>
+    <id>//achillesz.github.io/javascript/2015/08/19/grade</id>
     <content type="html">
   
     
@@ -611,9 +611,9 @@ type of obj
   
   <entry>
     <title>HTML单引号导致的BUG</title>
-    <link href="//achillesz.github.io/2015-08-14-bugs/"/>
+    <link href="//achillesz.github.io/work/2015/08/14/bugs.html"/>
     <updated>2015-08-14T22:56:36+08:00</updated>
-    <id>//achillesz.github.io/bugs</id>
+    <id>//achillesz.github.io/work/2015/08/14/bugs</id>
     <content type="html">需要读取且回传给后端的数据，悲剧的单引号
 
 
@@ -630,9 +630,9 @@ type of obj
   
   <entry>
     <title>票种模块业务</title>
-    <link href="//achillesz.github.io/2015-08-13-price-chanel/"/>
+    <link href="//achillesz.github.io/work/2015/08/13/price-chanel.html"/>
     <updated>2015-08-13T22:56:36+08:00</updated>
-    <id>//achillesz.github.io/price-chanel</id>
+    <id>//achillesz.github.io/work/2015/08/13/price-chanel</id>
     <content type="html">属性解释
 
 
@@ -651,9 +651,9 @@ type of obj
   
   <entry>
     <title>欢迎来到febbc</title>
-    <link href="//achillesz.github.io/2015-08-04-welcome-to-jekyll/"/>
+    <link href="//achillesz.github.io/jekyll/update/2015/08/04/welcome-to-jekyll.html"/>
     <updated>2015-08-04T06:14:36+08:00</updated>
-    <id>//achillesz.github.io/welcome-to-jekyll</id>
+    <id>//achillesz.github.io/jekyll/update/2015/08/04/welcome-to-jekyll</id>
     <content type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.
 
 To a...</content>
@@ -661,9 +661,9 @@ To a...</content>
   
   <entry>
     <title>Hello Jekyll!</title>
-    <link href="//achillesz.github.io/2014-08-13-hello-jekyll/"/>
+    <link href="//achillesz.github.io/demo/2014/08/13/hello-jekyll.html"/>
     <updated>2014-08-13T00:00:00+08:00</updated>
-    <id>//achillesz.github.io/hello-jekyll</id>
+    <id>//achillesz.github.io/demo/2014/08/13/hello-jekyll</id>
     <content type="html">测试 h1
 
 测试 h2
