@@ -41,4 +41,11 @@ comments:
 analytics:
     baidu:
         siteid:                             # 百度统计 js 代码后的字符串
-
+webmaster:
+    baidu:
+        verify:
+    google:
+        verify:
+    bing:
+        verify:
+            
