@@ -5,9 +5,30 @@
 
   
   <url>
+    <loc>//achillesz.github.io/jquery/2016/03/27/deferred.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-03-27T18:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/java/2016/03/24/java-public.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-03-24T16:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>//achillesz.github.io/linux/2016/03/24/edit-vim.html</loc>
     <changefreq>daily</changefreq>
     <lastmod>2016-03-24T16:51:36+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>//achillesz.github.io/ruby/2016/01/29/ruby-base.html</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-01-29T23:29:11+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -47,9 +68,9 @@
   </url>
   
   <url>
-    <loc>//achillesz.github.io/chrome/2015/12/28/deferred.html</loc>
+    <loc>//achillesz.github.io/chrome/2015/11/14/privatelink.html</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2015-12-28T18:51:36+08:00</lastmod>
+    <lastmod>2015-11-14T18:51:36+08:00</lastmod>
     <priority>0.8</priority>
   </url>
   

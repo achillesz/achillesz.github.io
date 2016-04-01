@@ -4,12 +4,66 @@
   <title>febbc</title>
   <link href="//achillesz.github.io//atom.xml" rel="self"/>
   <link href="//achillesz.github.io"/>
-  <updated>2016-03-26T11:21:04+08:00</updated>
+  <updated>2016-04-01T09:05:36+08:00</updated>
   <id>//achillesz.github.io</id>
   <author>
     <name>achilles</name>
   </author>
 
+  
+  <entry>
+    <title>deferred</title>
+    <link href="//achillesz.github.io/jquery/2016/03/27/deferred.html"/>
+    <updated>2016-03-27T18:51:36+08:00</updated>
+    <id>//achillesz.github.io/jquery/2016/03/27/deferred</id>
+    <content type="html">
+</content>
+  </entry>
+  
+  <entry>
+    <title>java public</title>
+    <link href="//achillesz.github.io/java/2016/03/24/java-public.html"/>
+    <updated>2016-03-24T16:51:36+08:00</updated>
+    <id>//achillesz.github.io/java/2016/03/24/java-public</id>
+    <content type="html">
+  
+    
+      作用域
+      当前类
+      同一package
+      子孙类
+      其他package
+    
+  
+  
+    
+      public
+      √
+      √
+      √
+      √
+    
+    
+      protected
+      √
+      √
+      √
+      x
+    
+    
+      friendly
+      √
+      √
+      x
+      x
+    
+    
+      private
+      √
+      x
+      x
+  ...</content>
+  </entry>
   
   <entry>
     <title>linux edit</title>
@@ -22,6 +76,33 @@ edit 编辑相对目录文件
 
 edit % 展开当前文件路径
 </content>
+  </entry>
+  
+  <entry>
+    <title>ruby 语法</title>
+    <link href="//achillesz.github.io/ruby/2016/01/29/ruby-base.html"/>
+    <updated>2016-01-29T23:29:11+08:00</updated>
+    <id>//achillesz.github.io/ruby/2016/01/29/ruby-base</id>
+    <content type="html">局部变量
+
+
+  
+    命名规则：以小写字母或者下划线开头；
+  
+  
+    Ruby中的方法调用也是以小写字母或下划线开头，而且调用的方法如果没有参数，则可以省略方法后的括号；
+  
+  
+    局部变量的定义：类、模块、方法的内部，当我们对一个以小写字母开头的变量进行赋值时，就声明了一个局部变量；离开范围局部变量消失；
+  
+  
+    允许定义顶层局部变量，但在类、方法、模块定义内仍无法访问该变量；
+  
+  
+    局部变量不可以在内部类、子类中访问；类中的方法不可以访问该类中定义的局部变量（平级）；；
+  
+  
+    在声明局部变量的类、模块、方法内，局部变量...</content>
   </entry>
   
   <entry>
@@ -169,9 +250,9 @@ i“ 引号内部的内容
   
   <entry>
     <title>chrome 您的链接不是私密链接</title>
-    <link href="//achillesz.github.io/chrome/2015/12/28/deferred.html"/>
-    <updated>2015-12-28T18:51:36+08:00</updated>
-    <id>//achillesz.github.io/chrome/2015/12/28/deferred</id>
+    <link href="//achillesz.github.io/chrome/2015/11/14/privatelink.html"/>
+    <updated>2015-11-14T18:51:36+08:00</updated>
+    <id>//achillesz.github.io/chrome/2015/11/14/privatelink</id>
     <content type="html">1.打开chrome://flags
 2.找到“允许来自https来源的不安全WebSocket”
 3.点启用，然后重启浏览器
