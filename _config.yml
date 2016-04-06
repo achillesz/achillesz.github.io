@@ -14,6 +14,8 @@ author:
     weibo:
 atom_path: /atom.xml
 rss_path: /rss.xml
+description: "前端小站，程序员"
+keywords: "html,css,javascript,java,ruby,linux,vim,前端工程师,fe"
 
 # Build settings
 kramdown:

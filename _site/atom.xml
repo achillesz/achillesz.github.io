@@ -4,21 +4,12 @@
   <title>febbc</title>
   <link href="//achillesz.github.io//atom.xml" rel="self"/>
   <link href="//achillesz.github.io"/>
-  <updated>2016-04-01T09:05:36+08:00</updated>
+  <updated>2016-04-06T08:34:34+08:00</updated>
   <id>//achillesz.github.io</id>
   <author>
     <name>achilles</name>
   </author>
 
-  
-  <entry>
-    <title>deferred</title>
-    <link href="//achillesz.github.io/jquery/2016/03/27/deferred.html"/>
-    <updated>2016-03-27T18:51:36+08:00</updated>
-    <id>//achillesz.github.io/jquery/2016/03/27/deferred</id>
-    <content type="html">
-</content>
-  </entry>
   
   <entry>
     <title>java public</title>
@@ -92,6 +83,11 @@ edit % 展开当前文件路径
   
     Ruby中的方法调用也是以小写字母或下划线开头，而且调用的方法如果没有参数，则可以省略方法后的括号；
   
+
+
+
+
+
   
     局部变量的定义：类、模块、方法的内部，当我们对一个以小写字母开头的变量进行赋值时，就声明了一个局部变量；离开范围局部变量消失；
   
@@ -102,31 +98,33 @@ edit % 展开当前文件路径
     局部变量不可以在内部类、子类中访问；类中的方法不可以访问该类中定义的局部变量（平级）；；
   
   
-    在声明局部变量的类、模块、方法内，局部变量...</content>
+    在声明局部变量的类、模块、方法内...</content>
   </entry>
   
   <entry>
     <title>html引号转义问题</title>
-    <link href="//achillesz.github.io/js/2016/01/29/quote.html"/>
+    <link href="//achillesz.github.io/javascript/2016/01/29/quote.html"/>
     <updated>2016-01-29T19:41:11+08:00</updated>
-    <id>//achillesz.github.io/js/2016/01/29/quote</id>
+    <id>//achillesz.github.io/javascript/2016/01/29/quote</id>
     <content type="html">描述：
 
 
-  
-    html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
+  html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
 目前产品线上，产品名显示的时候 都是这样 &amp;lt;input id=&quot;aaaa&quot; type=&quot;text&quot; value=&#39;sdffdf&#39;/&amp;gt;
 双引号的时候也不会有问题，但是有海外的产品录入，都成了英文了，会有单引号的问题。这个无法解决。也无法克服。对于JS的反斜杠转义在这里没有任何作用。。
-  
-  
-    第二种是我们经常从这种input 框里取数据，然后要JSON.parse 操作。 它要求属性用单引号，里面的对象用双引号，中间也确实可以加反斜杠，因为JS读取的时候...</content>
+
+
+
+
+
+  第二种是我们经常从这种input 框里取数据，然后要JSON.parse 操作。 它要求属性用单引号，里面的对象用双引号，中间也确实可以加反斜杠，因为JS读取的时候会正确的解析，但...</content>
   </entry>
   
   <entry>
     <title>Component介绍</title>
-    <link href="//achillesz.github.io/js/2016/01/26/component.html"/>
+    <link href="//achillesz.github.io/javascript/2016/01/26/component.html"/>
     <updated>2016-01-26T19:41:11+08:00</updated>
-    <id>//achillesz.github.io/js/2016/01/26/component</id>
+    <id>//achillesz.github.io/javascript/2016/01/26/component</id>
     <content type="html">类说明
 
 	$.ui.Component = function(opt_doc) {
@@ -793,6 +791,15 @@ int main(int argc, char **argv)
       head1
       head2
       hea...</content>
+  </entry>
+  
+  <entry>
+    <title>deferred</title>
+    <link href="//achillesz.github.io/jquery/2014/03/27/deferred.html"/>
+    <updated>2014-03-27T18:51:36+08:00</updated>
+    <id>//achillesz.github.io/jquery/2014/03/27/deferred</id>
+    <content type="html">
+</content>
   </entry>
   
 

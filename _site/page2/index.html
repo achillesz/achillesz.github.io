@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>febbc</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="前端小站，程序员">
+  <meta name="keywords" content="html,css,javascript,java,ruby,linux,vim,前端工程师,fe">
   <meta name="author" content="achilles">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.png">
@@ -127,21 +127,6 @@ var _hmt = _hmt || [];
   }
 </style>
 <div class="col-md-9">
-  
-  <h3 class="title"><a href="/ext/2015/11/05/define.html">define</a></h3>
-  
-  <div  class="bbb"> apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
-显然用到了 apply, 也用到了 Manager
-
-	Ext.apply(Ext,{
-	define: functionL() {}
-	})
-
-
-
-	define: function (className, data, createdFn) {
-		if (data.ove... </div>
-  
   
   <h3 class="title"><a href="/jquery/2015/10/28/CallBacks.html">Callbacks模块解析</a></h3>
   
@@ -315,6 +300,34 @@ $.ui.Dialog --&gt; $.ui.Component
  </div>
   
   
+  <h3 class="title"><a href="/javascript/2015/09/10/call-apply.html">Function.call Function.apply</a></h3>
+  
+	<div class="aaa">  <p>##内部实现</p>
+
+<h4 id="apply">apply</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+@param {Object} [thisArg]
+@param {Array} [argArray]
+@return {*}
+*/</span>
+<span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">apply</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">thisArg</span><span class="p">,</span><span class="nx">argArray</span><span class="p">)</span> <span class="p">{};</span>
+</code></pre>
+</div>
+<p>#### call</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cm">/**
+@param {Object} [thisArg]
+@param {...*} [args]
+@return {*}
+*/</span>
+<span class="nb">Function</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">call</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">thisArg</span><span class="p">,</span><span class="nx">args</span><span class="p">)</span> <span class="p">{};</span>
+<span class="nb">Function</span> <span class="o">=</span> <span class="p">{};</span>
+</code></pre>
+</div>
+ </div>
+  
+  
 
   <!-- Pagination links -->
   <div class="pull-right">
@@ -367,9 +380,6 @@ $.ui.Dialog --&gt; $.ui.Component
     <li><a href="/categories.html#jquery" rel="nofollow">jquery</a></li>
     
     
-    <li><a href="/categories.html#js" rel="nofollow">js</a></li>
-    
-    
     <li><a href="/categories.html#linux" rel="nofollow">linux</a></li>
     
     
@@ -388,17 +398,15 @@ $.ui.Dialog --&gt; $.ui.Component
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/jquery/2016/03/27/deferred.html" title="deferred">deferred</a></li>
-    
     <li><a href="/java/2016/03/24/java-public.html" title="java public">java public</a></li>
     
     <li><a href="/linux/2016/03/24/edit-vim.html" title="linux edit">linux edit</a></li>
     
     <li><a href="/ruby/2016/01/29/ruby-base.html" title="ruby 语法">ruby 语法</a></li>
     
-    <li><a href="/js/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
+    <li><a href="/javascript/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/js/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
+    <li><a href="/javascript/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
     
     <li><a href="/git/2016/01/12/delete-branch.html" title="git 删除远程分支">git 删除远程分支</a></li>
     
@@ -407,6 +415,8 @@ $.ui.Dialog --&gt; $.ui.Component
     <li><a href="/linux/2015/12/29/vim-move.html" title="linux 移动操作">linux 移动操作</a></li>
     
     <li><a href="/chrome/2015/11/14/privatelink.html" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
+    
+    <li><a href="/ext/2015/11/05/define.html" title="define">define</a></li>
     
   </ul>
 </section>
@@ -437,7 +447,7 @@ $.ui.Dialog --&gt; $.ui.Component
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="前端小站，程序员">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 

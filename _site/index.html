@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>febbc</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="前端小站，程序员">
+  <meta name="keywords" content="html,css,javascript,java,ruby,linux,vim,前端工程师,fe">
   <meta name="author" content="achilles">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/favicon.png">
@@ -128,40 +128,51 @@ var _hmt = _hmt || [];
 </style>
 <div class="col-md-9">
   
-  <h3 class="title"><a href="/jquery/2016/03/27/deferred.html">deferred</a></h3>
-  
-  <div  class="bbb"> 
- </div>
-  
-  
   <h3 class="title"><a href="/java/2016/03/24/java-public.html">java public</a></h3>
   
-  <div  class="bbb"> 
-  
-    
-      作用域
-      当前类
-      同一package
-      子孙类
-      其他package
-    
-  
-  
-    
-      public
-      √
-      √
-      √
-      √
-    
-    
-      protected
-      √
-      √
-      √
-      x
-    
-  ... </div>
+	<div class="aaa">  <table>
+  <thead>
+    <tr>
+      <th>作用域</th>
+      <th style="text-align: center">当前类</th>
+      <th style="text-align: center">同一package</th>
+      <th style="text-align: center">子孙类</th>
+      <th style="text-align: center">其他package</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>public</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+    </tr>
+    <tr>
+      <td>protected</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">x</td>
+    </tr>
+    <tr>
+      <td>friendly</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">x</td>
+      <td style="text-align: center">x</td>
+    </tr>
+    <tr>
+      <td>private</td>
+      <td style="text-align: center">√</td>
+      <td style="text-align: center">x</td>
+      <td style="text-align: center">x</td>
+      <td style="text-align: center">x</td>
+    </tr>
+  </tbody>
+</table>
+
+ </div>
   
   
   <h3 class="title"><a href="/linux/2016/03/24/edit-vim.html">linux edit</a></h3>
@@ -176,34 +187,34 @@ edit % 展开当前文件路径
   
   <h3 class="title"><a href="/ruby/2016/01/29/ruby-base.html">ruby 语法</a></h3>
   
-  <div  class="bbb"> 局部变量
+	<div class="aaa">  <h4 id="section">局部变量</h4>
 
+<ol>
+  <li>
+    <p>命名规则：以小写字母或者下划线开头；</p>
+  </li>
+  <li>
+    <p>Ruby中的方法调用也是以小写字母或下划线开头，而且调用的方法如果没有参数，则可以省略方法后的括号；</p>
+  </li>
+</ol>
 
-  
-    命名规则：以小写字母或者下划线开头；
-  
-  
-    Ruby中的方法调用也是以小写字母或下划线开头，而且调用的方法如果没有参数，则可以省略方法后的括号；
+ </div>
   
   
-    局部变量的定义：类、模块、方法的内部，当我们对一个以小写字母开头的变量进行赋值时，就声明了一个局部变量；离开范围局部变量消失；
+  <h3 class="title"><a href="/javascript/2016/01/29/quote.html">html引号转义问题</a></h3>
   
-  
-    允许定义顶层局部变量，但在类、方法、模... </div>
-  
-  
-  <h3 class="title"><a href="/js/2016/01/29/quote.html">html引号转义问题</a></h3>
-  
-  <div  class="bbb"> 描述：
+	<div class="aaa">  <h3 id="section">描述：</h3>
 
+<ol>
+  <li>html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
+目前产品线上，产品名显示的时候 都是这样 <code class="highlighter-rouge">&lt;input id="aaaa" type="text" value='sdffdf'/&gt;</code>
+双引号的时候也不会有问题，但是有海外的产品录入，都成了英文了，会有单引号的问题。这个无法解决。也无法克服。对于JS的反斜杠转义在这里没有任何作用。。</li>
+</ol>
 
-  
-    html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
-目前产品线上，产品名显示的时候 都是这样 &lt;input id="aaaa" type="text" value='sdffdf'/&gt;
-双引号的时候也不会有问题，但是有海外的产品录入，都成了英文了，会有单引号的问题。这个无法解决。也无法克服。对于JS的反斜杠转义在这里没... </div>
+ </div>
   
   
-  <h3 class="title"><a href="/js/2016/01/26/component.html">Component介绍</a></h3>
+  <h3 class="title"><a href="/javascript/2016/01/26/component.html">Component介绍</a></h3>
   
   <div  class="bbb"> 类说明
 
@@ -290,6 +301,21 @@ zb 把当前行置于屏幕的底端
  </div>
   
   
+  <h3 class="title"><a href="/ext/2015/11/05/define.html">define</a></h3>
+  
+  <div  class="bbb"> apply此处的一个作用只是把arguments 完全拿过来使用，以符合参数的格式，而作用域本来就是 Manager
+显然用到了 apply, 也用到了 Manager
+
+	Ext.apply(Ext,{
+	define: functionL() {}
+	})
+
+
+
+	define: function (className, data, createdFn) {
+		if (data.ove... </div>
+  
+  
 
   <!-- Pagination links -->
   <div class="pull-right">
@@ -340,9 +366,6 @@ zb 把当前行置于屏幕的底端
     <li><a href="/categories.html#jquery" rel="nofollow">jquery</a></li>
     
     
-    <li><a href="/categories.html#js" rel="nofollow">js</a></li>
-    
-    
     <li><a href="/categories.html#linux" rel="nofollow">linux</a></li>
     
     
@@ -361,17 +384,15 @@ zb 把当前行置于屏幕的底端
   <h3 class="title">Recently Posts</h3>
   <ul>
     
-    <li><a href="/jquery/2016/03/27/deferred.html" title="deferred">deferred</a></li>
-    
     <li><a href="/java/2016/03/24/java-public.html" title="java public">java public</a></li>
     
     <li><a href="/linux/2016/03/24/edit-vim.html" title="linux edit">linux edit</a></li>
     
     <li><a href="/ruby/2016/01/29/ruby-base.html" title="ruby 语法">ruby 语法</a></li>
     
-    <li><a href="/js/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
+    <li><a href="/javascript/2016/01/29/quote.html" title="html引号转义问题">html引号转义问题</a></li>
     
-    <li><a href="/js/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
+    <li><a href="/javascript/2016/01/26/component.html" title="Component介绍">Component介绍</a></li>
     
     <li><a href="/git/2016/01/12/delete-branch.html" title="git 删除远程分支">git 删除远程分支</a></li>
     
@@ -380,6 +401,8 @@ zb 把当前行置于屏幕的底端
     <li><a href="/linux/2015/12/29/vim-move.html" title="linux 移动操作">linux 移动操作</a></li>
     
     <li><a href="/chrome/2015/11/14/privatelink.html" title="chrome 您的链接不是私密链接">chrome 您的链接不是私密链接</a></li>
+    
+    <li><a href="/ext/2015/11/05/define.html" title="define">define</a></li>
     
   </ul>
 </section>
@@ -410,7 +433,7 @@ zb 把当前行置于屏幕的底端
       </article>
 
       <footer class="footer text-center">
-  <p>&copy; 2016 <a href="//achillesz.github.io" title="">achilles</a> </p>
+  <p>&copy; 2016 <a href="//achillesz.github.io" title="前端小站，程序员">achilles</a> </p>
   <p>Articles are licensed under <a href="//creativecommons.org/licenses/by/3.0/" title="CC BY 3.0 License">the CC BY 3.0</a></p>
 </footer>
 
