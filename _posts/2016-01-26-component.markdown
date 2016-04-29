@@ -6,7 +6,7 @@ categories: [javascript]
 tags: [google closure]
 ---
 
-## 类说明
+`google closure` 一个组件 `component` 的用法
 
 ```js
 	$.ui.Component = function(opt_doc) {
