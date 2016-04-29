@@ -1,7 +1,9 @@
 --- 
 layout: post
-title: "linux edit"
+title: "vim edit"
 date:   2016-03-24 08:51:36
+keywords: vim,edit
+description: 命令行下打开，修改，新建文件
 categories: [linux]
 tags: [vim]
 ---

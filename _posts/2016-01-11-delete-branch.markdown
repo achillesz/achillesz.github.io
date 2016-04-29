@@ -2,6 +2,8 @@
 layout: post
 title: "git 删除远程分支"
 date:   2016-01-11 19:16:11
+keywords: git基本功，分支创建，远程分支删除
+description: git基本功，分支创建，远程分支删除
 categories: [git]
 tags: [删除远程分支]
 ---

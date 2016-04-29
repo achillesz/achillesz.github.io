@@ -1,6 +1,8 @@
 --- 
 layout: post
 title: "java public"
+keywords: java,public
+description: java权限作用
 date:   2016-03-24 08:51:36
 categories: [java]
 tags: [public]

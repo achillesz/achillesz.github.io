@@ -2,6 +2,7 @@
 layout: post
 title: "Component介绍"
 date:   2016-01-26 11:41:11
+
 categories: [javascript]
 tags: [google closure]
 ---

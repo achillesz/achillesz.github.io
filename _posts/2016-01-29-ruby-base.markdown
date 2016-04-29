@@ -2,6 +2,8 @@
 layout: post
 title: "ruby 语法"
 date:   2016-01-29 15:29:11
+keywords: ruby,语法
+description: ruby基础知识
 categories: [ruby]
 tags: [ruby语法]
 ---
