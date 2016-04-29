@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "define"
+keywords: jQuery defind
+description: jQuery defind 源码解读
 date:   2015-11-04 18:11:36
 categories: [ext]
 tags: [Callbacks]

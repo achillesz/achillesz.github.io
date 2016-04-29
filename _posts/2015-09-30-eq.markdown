@@ -2,6 +2,8 @@
 layout: post
 title: "eq pushStack merge"
 date:   2015-09-30 18:31:36
+keywords: jquery,eq,pushStack,merge
+description: jquery源码,eq,pushStack,merge
 categories: [jQuery]
 tags: [eq,Core]
 ---

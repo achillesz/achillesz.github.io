@@ -2,6 +2,8 @@
 layout: post
 title: "trim的实现"
 date:   2015-09-24 20:54:36
+keywords: js trim,jq trim,去除首尾空格
+description: js,google closure,component
 categories: [jQuery]
 tags: [trim,Core]
 ---

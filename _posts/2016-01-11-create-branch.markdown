@@ -2,6 +2,8 @@
 layout: post
 title: "git 创建分支命令"
 date:   2016-01-11 15:12:11
+keywords: git,创建分支，建立trace
+description: git,创建分支，建立trace
 categories: [git]
 tags: [创建分支]
 ---

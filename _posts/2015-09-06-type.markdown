@@ -2,6 +2,8 @@
 layout: post
 title: "jQuery type"
 date:   2015-09-06 20:51:36
+keywords: 表单验证，jQuery,jvalidator
+description: jquery表单验证的问题 
 categories: [javascript,jquery]
 tags: [jQuery,Core]
 ---

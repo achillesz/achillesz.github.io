@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Function.call Function.apply"
+keywords: javascript apply, call
+description: javascript apply,call 的区别
 category: javascript
 tags: [javascript-core]
 ---
