@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "js继承解释"
+keywords: 面向对象的javascript,js继承实现
+description: 面向对象的javascript,js继承实现
 date:   2015-09-11 15:51:36
 tags: javascript
 ---

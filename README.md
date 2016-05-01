@@ -1,27 +1,60 @@
-#### Create new post
+touch 总结
+======================
 
-    rake post title='A Title'
-    or
-    rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 
-#### Create new page
+本地无景点解决
+----
 
-    rake page name='about.html'
+```
+	/home/q/www/piao.qunar.com/cache/qconfig
+	cat application.properties.merged
+```
 
-#### Define your color
+chrome浏览器模拟APP
+----
 
-Edit the file:  `assets/_sass/_custom.scss`
+```
+qunariphone/80018888
+Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B137 Safari/601.1 qunariphone
+```
+上面随便填的似乎有问题，要尽量选一个之后，再加入 `qunariphone`
 
-#### Use qiniu cdn
+detail页面打不开 报500错误
+----
 
-    rake qrsync
+需要重启报价
 
-Then, follow tips to do
+打开景点 `detail` 没有数据
+----
+刷报价
 
-#### License
 
-- The Font Awesome font is licensed under the [SIL OFL 1.1](http://scripts.sil.org/OFL)
-- Font Awesome CSS, LESS, and SASS files are licensed under the [MIT License](http://opensource.org/licenses/mit-license.html)
-- Bootstrap is licensed under the [MIT License](http://opensource.org/licenses/mit-license.html)
-- Jekyll is licensed under the [MIT License](http://opensource.org/licenses/mit-license.html)
-- Pygments is licensed under the [BSD License](http://opensource.org/licenses/BSD-2-Clause)
+用手机调试
+----
+
+保证
+
+刷 host
+----
+
+```
+ipconfig /flushdns
+```
+
+
+
+本机开无线
+----
+
+[参考](http://jingyan.baidu.com/article/335530da4f774019cb41c3eb.html) 
+能连上，但不能用
+
+fiddler用于手机测试
+----
+
+1. 开启fiddler 本地所有的请求都被监听
+2. 手机测试要保证统一网段，
+3. 要让 `fiddler` 监听需要设置代理 `IP` 和端口
+
+![代理关系图]('https://pic1.zhimg.com/45e27880b2543da77d9c44a43d740988_b.jpg')
+

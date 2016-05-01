@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Callbacks模块解析"
+keywords: jQuery CallBacks
+description: jQuery CallBacks 源码解读
 date:   2015-10-27 18:11:36
 categories: [jQuery]
 tags: [Callbacks]

@@ -2,11 +2,11 @@
 layout: post
 title: "html引号转义问题"
 date:   2016-01-29 11:41:11
+keywords: js,html,引号转义问题
+description: js,html,引号转义问题
 categories: [javascript]
 tags: [bug]
 ---
-
-### 描述：
 
 1. html标签属性一般是双引号，也可以用单引号。 这样要求中间内容不能添加相同的引号。 
 目前产品线上，产品名显示的时候 都是这样 `<input id="aaaa" type="text" value='sdffdf'/>`

@@ -1,6 +1,8 @@
 --- 
 layout: post
 title: "jQuery-Event"
+keywords: jQuery事件解析
+description: jQuery事件解析机制解析
 date:   2015-08-27 14:57:36
 categories: [javascript,jquery]
 tags: [jQuery,Event]

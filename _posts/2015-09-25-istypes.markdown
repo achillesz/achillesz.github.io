@@ -2,6 +2,8 @@
 layout: post
 title: "类型判断"
 date:   2015-09-25 10:53:36
+keywords: jquery,type,js类型判断
+description: javascript类型判断
 categories: [jQuery]
 tags: [is,Core]
 ---

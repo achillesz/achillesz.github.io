@@ -2,9 +2,13 @@
 layout: post
 title: "git 创建分支命令"
 date:   2016-01-11 15:12:11
+keywords: git,创建分支，建立trace
+description: git,创建分支，建立trace
 categories: [git]
 tags: [创建分支]
 ---
+
+只使用命令行创建分支并在其上面工作
 
 1. 先切换到主分支（一般从master新建分支）
 2. 新建并切换到分支
