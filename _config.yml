@@ -20,8 +20,6 @@ keywords: "html,css,javascript,java,ruby,linux,vim,前端工程师,fe"
 # Build settings
 kramdown:
     input: GFM
-redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
 assets_path: /assets
 sass:
     sass_dir: assets/_sass
