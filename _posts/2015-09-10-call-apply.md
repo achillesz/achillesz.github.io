@@ -6,7 +6,8 @@ description: javascript apply,call 的区别
 category: javascript
 tags: [javascript-core]
 ---
-##内部实现
+
+## 内部实现
 
 #### apply
 
