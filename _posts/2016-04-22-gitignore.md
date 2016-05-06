@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Git忽略规则及.gitignore规则不生效的解决办法a"
+title:  "Git忽略规则及.gitignore规则不生效的解决办法"
 keywords: .gitignore,设置git忽略文件
 description: git忽略规则设置
+date: 2016-05-01 10:10:00
 category: git
 tags: [gitignore]
 ---
