@@ -3,7 +3,7 @@ layout: post
 title: "js 垃圾回收机制"
 keywords: js 垃圾回收机制 
 description: js 垃圾回收机制
-date: 2016-05-25 08:52:36
+date: 2016-05-24 08:52:36
 categories: [js]
 tags: [js]
 ---
@@ -59,11 +59,13 @@ el.onclick = function ()
 el = null;
 }
 init();
+
 ```
 
 需要返回DOM
 
 ```js
+
 function init() {
 var el = document.getElementById('MyElement');
 el.onclick = function ()
@@ -80,6 +82,7 @@ init();
 ````
 
 2) 构造新的context
+
 ```js
 function elClickHandler()
 {……}
@@ -90,6 +93,7 @@ var el = document.getElementById('MyElement');
 el.onclick = elClickHandler;
 }
 init()
+
 ```
 
 把function抽到新的context中，这样，function的context就不包含对el的引用，从而打断循环引用。
