@@ -61,6 +61,24 @@ el = null;
 init();
 ```
 
+需要返回DOM
+
+```js
+function init() {
+var el = document.getElementById('MyElement');
+el.onclick = function ()
+{……}
+
+try{
+return el;
+} finally {
+el = null;
+}
+}
+init();
+
+````
+
 2) 构造新的context
 ```js
 function elClickHandler()
