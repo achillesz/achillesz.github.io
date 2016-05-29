@@ -23,5 +23,7 @@ Run npm rebuild node-sass to build the binding for your current environment.
 	npm rebuild node-sass
 ```
 
+![gulp success](/assets/img/gulp-success.jpg)
+
 
 
