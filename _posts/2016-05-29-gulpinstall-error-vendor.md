@@ -3,7 +3,7 @@ layout: post
 title: "gulp run error node-sass"
 keywords: gulp 
 description: 前端构建工具
-date: 2016-05-30 08:52:36
+date: 2016-05-29 08:52:36
 categories: [前端构建工具]
 tags: [gulp]
 ---
