@@ -16,6 +16,6 @@ tags: [gulp]
 
 [plugins](http://gulpjs.com/plugins/)
 
-
+[原理](http://sentsin.com/web/861.html)
 
 
