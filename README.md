@@ -58,3 +58,8 @@ fiddler用于手机测试
 
 ![代理关系图]('https://pic1.zhimg.com/45e27880b2543da77d9c44a43d740988_b.jpg')
 
+
+## 安卓包下载地址
+
+http://192.168.9.253/out
+
