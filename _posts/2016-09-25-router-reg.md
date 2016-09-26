@@ -85,6 +85,25 @@ z undefined
 ```
 
 这是一个 `/(\(\?)?:\w+/g`  `replace` 过程的变化。可以结合理解正则变换的那个函数。
+
+####   "optional(/:item)"     "optionalItem"
+
+生成的匹配路由:
+
+^optional(?:\/([^\/?]+))?(?:\?([\s\S]*))?$ 
+
+这个正则的匹配情况有:
+
+1. optional
+2. optional/df
+3. optional/f?dffdf
+4. optional/f?dfdfd
+5. optional/s/dfd?fdf  这种情况不能匹配
+
+匹配的情况中,如果第二个括号的内容是存在的,那么一定是 `/fddfdf` 而不能是 `/fdfd/`
+
+
+
  
 
 
