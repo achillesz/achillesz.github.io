@@ -12,7 +12,7 @@ tags: [router]
 [mozilla pop](https://developer.mozilla.org/zh-CN/docs/Web/Events/popstate)
 
 
-```
+
 
 
 ```js
@@ -73,6 +73,20 @@ tags: [router]
 2. named/optional/yddff (y后面必须加一个是因为可选项的后面是`+` 表示至少有一个)
 3. named/optional/y? (这个情况是不能匹配的,还是 `+` 号后面表示必须有一个,而 `?` 是非匹配集合中的一个 )
 4. named/optional/ydfdff? (这个情况是可以匹配的, 原因是 `?` 是下一括号里面的匹配了)
+
+
+
+```js
+
+?:y (? 
+z undefined 
+/^named\/optional\/(?:y([^\/?]+))?(?:\?([\s\S]*))?$/ "namedOptionalItem" 
+
+```
+
+这是一个 `/(\(\?)?:\w+/g`  `replace` 过程的变化。可以结合理解正则变换的那个函数。
+ 
+
 
 
 
