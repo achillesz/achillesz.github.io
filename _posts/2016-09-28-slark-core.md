@@ -429,8 +429,6 @@ main.js 里面声明返回了 `Blend`
 
 ```js
 
-
-
   define(['./blend','./Layer','./LayerGroup'], function (blend, layer,layergroup) {
       "use strict";
   
@@ -447,6 +445,7 @@ main.js 里面声明返回了 `Blend`
       return blend;
       
   });  
+  
     
 ```
 
@@ -455,6 +454,7 @@ main.js 里面声明返回了 `Blend`
 下面是源码:
 
 ```js
+
     define(['../lib',"../web/events",'../web/api'],
         function(lib,events,api) {
     
