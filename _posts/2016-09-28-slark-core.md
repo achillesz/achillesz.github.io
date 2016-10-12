@@ -19,7 +19,12 @@ initTime: 1475028608660, router: t, isLowDevice: false, transform: "-webkit-tran
 方法
 
 1. 直接声明
-2. from `util` 模块
+2. from `util` 模块  
+
+    //bind util to core
+    for (var i in util){
+        core[i] = util[i];
+    }
 
 ```js
 
