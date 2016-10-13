@@ -4,7 +4,8 @@ title:  "js继承解释"
 keywords: 面向对象的javascript,js继承实现
 description: 面向对象的javascript,js继承实现
 date:   2015-09-11 15:51:36
-tags: javascript
+categories: [js]
+tags: 继承
 ---
 
 
@@ -141,6 +142,28 @@ Son {a: 1}  证明函数执行 this指向
 * 为何要用call?
 * 为何子类要保存父类的原型？
 * 为何要重置constructor?
+
+今天看另一份源码的时候发现另一个问题:
+
+```js
+        lang.inherits = function(subClass, superClass) {
+
+            var Empty = function() {};
+            Empty.prototype = superClass.prototype;
+            var selfPrototype = subClass.prototype;
+            var proto = subClass.prototype = new Empty();
+
+            for (var key in selfPrototype) {
+                proto[key] = selfPrototype[key];//可能出现引用传递的问题
+            }
+            subClass.prototype.constructor = subClass;
+            subClass.superClass = superClass.prototype;
+
+            return subClass;
+        };
+```
+
+之前的继承,会有继承之前不能添加原型,会有顺序要求,而可以通过暂时保存,覆盖之后,再遍历回去。代码如上。
 
 
 
