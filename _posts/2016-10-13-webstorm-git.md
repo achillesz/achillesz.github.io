@@ -18,9 +18,9 @@ mac 下 webstorm 突然不能使用了,主要表现在,文件颜色的记录上�
  尝试: 
  
  ```text
+ 
  sudo xcodebuild -license
  Password:
- 
  
  You have not agreed to the Xcode license agreements. You must agree to both license agreements below in order to use Xcode.
  
