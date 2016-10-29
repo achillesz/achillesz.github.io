@@ -60,6 +60,26 @@ To run your app on Android:
    react-native run-android
 ```
 
+
+```text
+    react-native run-ios
+```
+
+ ![执行情况](/assets/img/hellowrold.png)
+ ![报错处理](/assets/img/hellowrold.png)
+ 
+ 进入项目目录,找到react-native, `npm start`
+ 
+ 选择 `reload js`
+ 
+ 修改 `index.ios.js` 
+ 
+  ![报错处理](/assets/img/hello-success.png)
+ 
+ 
+  
+  
+
  
  
  
