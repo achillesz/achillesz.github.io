@@ -8,7 +8,7 @@ categories: [js]
 tags: [react]
 ---
 
-####安装部分
+#### 安装部分
 
 1. mac os.
 2. xcode.
