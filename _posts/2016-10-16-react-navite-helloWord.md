@@ -74,7 +74,7 @@ To run your app on Android:
  
  修改 `index.ios.js` 
  
-  ![报错处理](/assets/img/hello-success.png)
+ ![报错处理](/assets/img/hello-success.png)
  
  
   
