@@ -31,3 +31,13 @@ tags: [创建分支]
     git checkout -b serverfix origin/serverfix
 ```
 
+另一些分支删除 创建操作
+
+```js
+    git branch -d master //删除一个分支
+    
+    git branch master mydev // 用后面的分支作为起点创建分支
+    
+    git checkout master // 切到这个分支
+```
+
