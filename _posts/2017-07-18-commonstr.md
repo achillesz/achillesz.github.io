@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "isPalindrome"
-keywords: isPalindrome
-description: Reflect
+title: "最长公共字符窜"
+keywords: 公共字符窜
+description: 公共字符窜
 date: 2017-07-18 10:00:00
 categories: [js]
 tags: [算法]
