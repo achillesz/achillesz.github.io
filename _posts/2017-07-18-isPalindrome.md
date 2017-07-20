@@ -2,14 +2,14 @@
 layout: post
 title: "isPalindrome"
 keywords: isPalindrome
-description: Reflect
+description: isPalindrome
 date: 2017-07-18 09:00:00
 categories: [js]
 tags: [功能函数]
 ---
 
 
-对象冻结
+是否回文
 
 ```js
     function isPalindrome(str) {
