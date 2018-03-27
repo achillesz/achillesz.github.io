@@ -27,24 +27,6 @@ npm init
 8. 如果提示没有权限啥的，说明包名重复，换一个，如果提示邮箱验证没通过，需要先重复6的步骤。
 9. 搜到自己发布的包
 
-根据
-
-几个模块:
-
-HtmlWebpackPlugin
-
-opn
-
-express
-
-webpack-dev-middleware
-
-[http-serve](https://www.npmjs.com/package/http-server)
-
-[webpack](https://github.com/DDFE/DDFE-blog/issues/10)
-
-
-[官网](https://cn.vuejs.org/v2/guide/installation.html#命令行工具-CLI)
 
 
   
